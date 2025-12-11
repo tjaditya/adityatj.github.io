@@ -1,0 +1,12 @@
+title: "Aditya J Thamarasseril"
+description: "Aspiring Mechanical & Robotics Engineer | CFD | IoT | AP Scholar with Distinction"
+theme: minima
+
+url: "https://adityatj.com"
+github_username: tjaditya
+
+header_pages:
+  - about.md
+  - projects.md
+  - travel.md
+  - photography.md
