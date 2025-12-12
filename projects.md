@@ -41,7 +41,7 @@ The program focused on the complete workflow of exterior car design – from ini
 - Built a clay model based on the final sketch using the course tools and workflow  
 - Presented the final design to faculty and peers at the end of the program
 
-[View full IED Turin project with photos →](/projects/ied-turin/)
+[View full IED Turin project with photos →](/ied-turin.md)
 
 ---
 
