@@ -42,20 +42,20 @@ Early sketches exploring stance, surface transitions, and proportions.
 Progression of the physical 3D model built from the selected sketch.
 
 <div class="photo-grid">
-  <figure><img src="/assets/photos/ied/2-clay/01.jpeg" alt="Clay modeling step 1"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/02.jpeg" alt="Clay modeling step 2"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/03.jpeg" alt="Clay modeling step 3"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/04.jpeg" alt="Clay modeling step 4"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/05.jpeg" alt="Clay modeling step 5"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/06.jpeg" alt="Clay modeling step 6"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/07.jpeg" alt="Clay modeling step 7"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/08.jpeg" alt="Clay modeling step 8"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/09.jpeg" alt="Clay modeling step 9"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/10.jpeg" alt="Clay modeling step 10"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/11.jpeg" alt="Clay modeling step 11"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/12.jpeg" alt="Clay modeling step 12"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/13.jpeg" alt="Clay modeling step 13"></figure>
-  <figure><img src="/assets/photos/ied/2-clay/14.jpeg" alt="Clay modeling step 14"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/01.jpeg" alt="Clay modeling step 1"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/02.jpeg" alt="Clay modeling step 2"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/03.jpeg" alt="Clay modeling step 3"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/04.jpeg" alt="Clay modeling step 4"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/05.jpeg" alt="Clay modeling step 5"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/06.jpeg" alt="Clay modeling step 6"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/07.jpeg" alt="Clay modeling step 7"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/08.jpeg" alt="Clay modeling step 8"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/09.jpeg" alt="Clay modeling step 9"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/10.jpeg" alt="Clay modeling step 10"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/11.jpeg" alt="Clay modeling step 11"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/12.jpeg" alt="Clay modeling step 12"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/13.jpeg" alt="Clay modeling step 13"></figure>
+  <figure><img src="/assets/photos/ied/2-clay-modeling/14.jpeg" alt="Clay modeling step 14"></figure>
 </div>
 
 ---
