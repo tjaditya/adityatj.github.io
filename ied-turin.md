@@ -109,7 +109,10 @@ This represents the successful conclusion of the program and the beginning of th
 
 <div class="photo-grid">
   <figure>
-    <img src="/assets/photos/ied/personal/certificate-award.jpeg" alt="Aditya receiving certificate at IED Turin">
+    <img src="/assets/photos/ied/personal/certificate-awarded.jpeg" alt="Aditya receiving certificate at IED Turin">
+  </figure>
+  <figure>
+    <img src="/assets/photos/ied/personal/certificate.jpeg" alt="Aditya receiving certificate at IED Turin">
   </figure>
 </div>
 
