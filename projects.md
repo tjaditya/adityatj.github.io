@@ -41,12 +41,7 @@ The program focused on the complete workflow of exterior car design – from ini
 - Built a clay model based on the final sketch using the course tools and workflow  
 - Presented the final design to faculty and peers at the end of the program
 
-**Planned extensions (independent work)**
-
-- Rebuilding the car in Blender as a **clean, watertight 3D model**  
-- Preparing the model for **CFD analysis** and 3D printing  
-- Running aerodynamic simulations using **cfMesh + OpenFOAM + ParaView**  
-- Documenting the full pipeline (concept → 3D → CFD → prototype) in the GitHub repo
+[View full IED Turin project with photos →](/projects/ied-turin/)
 
 ---
 
@@ -64,6 +59,13 @@ Focus areas: sensor fusion, control algorithms, and robust embedded software.
 ---
 
 ### 4. CFD Pipeline for Car Aerodynamics *(in progress)*
+
+- Rebuilding the car design at IED, Turin in Blender as a **clean, watertight 3D model**  
+- Preparing the model for **CFD analysis** and 3D printing  
+- Running aerodynamic simulations using **cfMesh + OpenFOAM + ParaView**  
+- Documenting the full pipeline (concept → 3D → CFD → prototype) in the GitHub repo
+
+**What I learnt**
 
 - Blender modelling → mesh generation using **cfMesh**
 - Simulation with **OpenFOAM**
