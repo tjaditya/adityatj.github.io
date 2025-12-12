@@ -85,18 +85,11 @@ Final refinement of the clay model into a presentable design output.
 
 ## 4. Final Presentation
 
-During the final review at IED, I presented my design process, clay model, and the final refined concept to the faculty panel.  
-This moment captures the culmination of three weeks of exploration, iteration, and hands-on design work.
+During the final review at IED, I presented my design process, clay model, and the final refined concept to the faculty panel. This denotes the culmination of three weeks of exploration, iteration, and hands-on design work.
 
 <div class="photo-grid">
   <figure>
-    <img src="/assets/photos/ied/personal/presentation-1.jpeg" alt="Aditya presenting final design at IED Turin">
-  </figure>
-  <figure>
-    <img src="/assets/photos/ied/personal/presentation-2.jpeg" alt="Aditya presenting final design at IED Turin">
-  </figure>
-  <figure>
-    <img src="/assets/photos/ied/personal/presentation-3.jpeg" alt="Aditya presenting final design at IED Turin">
+    <img src="/assets/photos/ied/personal/presentation.jpeg" alt="Aditya presenting final design at IED Turin">
   </figure>
 </div>
 
@@ -104,8 +97,7 @@ This moment captures the culmination of three weeks of exploration, iteration, a
 
 ## 5. Program Completion
 
-At the closing ceremony, I was awarded the completion certificate for the IED Turin Summer Course in Introduction to car design.  
-This represents the successful conclusion of the program and the beginning of the engineering extensions I am now pursuing.
+At the closing ceremony, I was awarded the completion certificate for the IED Turin Summer Course in Introduction to car design. This represents the successful conclusion of the program and the beginning of the engineering extensions I am now pursuing.
 
 <div class="photo-grid">
   <figure>
