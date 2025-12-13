@@ -30,8 +30,6 @@ permalink: /sketchbook/
 }
 </style>
 
-# Sketchbook & Visual Studies
-
 These sketches and shading studies represent my early exploration of **form, light, proportion, and visual design**.  
 They have helped me build the foundation for my interest in **vehicle design, 3D modeling, and concept development**, and they support my work at **IED Turin** and in my **CFD-based design pipeline**.
 
