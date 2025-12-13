@@ -63,3 +63,11 @@ This site is a living record of my learning journey — combining:
 
 I am continuously updating it as I make progress on projects, experiments, and university preparation.
 
+---
+
+## Explore My Work
+
+To see my engineering and design projects, visit the **Projects** page.
+
+➡️ [View My Projects →](/projects/)
+
