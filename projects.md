@@ -30,17 +30,27 @@ The program focused on the complete workflow of exterior car design – from ini
 
 - Studio sessions on proportions, stance, and surface language  
 - Sketching iterations with one-to-one feedback  
-- Translating the selected concept into a 3D physical model using clay modeling 
-- Classroom sessions on trends in automotive design
+- Translating the selected concept into a 3D physical model using clay modeling  
+- Classroom sessions on trends in automotive design  
 
 **What I did**
 
 - Developed an original exterior concept for a compact performance car  
-- Created side, front, and rear views exploring different surface treatments
-- Built a digital version of the chosen concept in Photoshop 
+- Created side, front, and rear views exploring different surface treatments  
+- Built a digital version of the chosen concept in Photoshop  
 - Built a clay model based on the final sketch using the course tools and workflow  
-- Presented the final design to faculty and peers at the end of the program
-- Visited exclusive garages and met profesional designers
+- Presented the final design to faculty and peers at the end of the program  
+
+**Industry Exposure (Exclusive Garage Visits)**  
+Alongside the studio coursework, I visited several **private and specialist automotive garages** in and around Turin. These visits provided firsthand exposure to:
+
+- Performance vehicle restoration and custom tuning  
+- Fabrication techniques used for bodywork and aerodynamic add-ons  
+- Motorsport-influenced modification processes  
+- High-precision detailing and finishing methods  
+
+These interactions helped me understand how design intent translates into real-world build constraints, and how engineers, fabricators, and designers collaborate to create performance-oriented vehicles.
+
 
 [View full IED Turin project with photos →](/ied-turin.md)
 
