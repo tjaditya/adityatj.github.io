@@ -14,7 +14,7 @@ I completed my schooling in India and am currently in a **break year** to deepen
 
 ## Academics
 
-- **Class X (CBSE – Oakridge International School, a Nord Anglia Education school):** 89%
+- **Class X (CBSE – Oakridge International School, a Nord Anglia Education school):** 89%  
 - **Class XII (Telangana IPE):** 94.5% (PCM 94.76%)
 
 ### Standardized Exams
@@ -41,13 +41,22 @@ I am using my break year to build engineering depth through project-based learni
   (Extending my IED Turin concept design into a full CFD and 3D-printable model)
 
 - **Autonomous Rover (Raspberry Pi)**  
-  Implementing **LKA, ACC, and AEB**, along with sensor fusion and control algorithms  
+  Implementing **LKA, ACC, and AEB**, along with sensor fusion and real-time control algorithms  
 
 ### 💻 Technical Skills I’m Developing
 - Linux fundamentals & shell-based workflows  
-- Git/GitHub, version control, and project documentation  
+- Git/GitHub and version control  
 - Python for simulation and automation  
-- Robotics & embedded system programming  
+- Robotics & embedded systems programming  
+
+---
+
+## Visual Studies (Sketchbook)
+
+Alongside engineering and robotics, I maintain a small sketchbook where I practice **shading, perspective, and form studies**.  
+These exercises help me build visual intuition for design — skills that support my work in **car modeling, aerodynamics, and concept development**.
+
+[View my sketchbook →](/sketchbook/)
 
 ---
 
@@ -59,6 +68,7 @@ This site is a living record of my learning journey — combining:
 - Robotics  
 - Computational physics  
 - Programming  
+- Visual studies  
 - Photography and travel documentation  
 
 I am continuously updating it as I make progress on projects, experiments, and university preparation.
@@ -70,4 +80,3 @@ I am continuously updating it as I make progress on projects, experiments, and u
 To see my engineering and design projects, visit the **Projects** page.
 
 ➡️ [View My Projects →](/projects/)
-
