@@ -16,6 +16,7 @@ permalink: /projects/ied-turin/
   border-radius: 4px;
 }
 </style>
+← [Back to Projects](/projects/)
 
 # IED Turin – Car Design Summer Course  
 A 3-week onsite program focused on the complete workflow of exterior car design—from ideation sketching to clay modeling and digital refinement.
