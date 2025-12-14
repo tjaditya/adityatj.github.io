@@ -92,3 +92,4 @@ The final geometry was exported as a **watertight STL**, suitable for unstructur
 
 The project uses a fully open-source CFD workflow:
 
+← [Back to Projects](/projects/)
