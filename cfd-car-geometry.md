@@ -3,6 +3,7 @@ layout: page
 title: Concept Car Body Design & CFD-Ready Geometry Development
 permalink: /projects/cfd-car-geometry/
 ---
+← [Back to Projects](/projects/)
 
 **Tools:** Blender · cfMesh · OpenFOAM · ParaView  
 **Domain:** Automotive Design & Aerodynamics  
