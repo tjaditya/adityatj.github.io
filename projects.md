@@ -6,84 +6,101 @@ permalink: /projects/
 
 ## Featured Projects
 
-### 1. Car 3D Print – Concept to Prototype
-**Repo:** [car-3dprint](https://github.com/tjaditya/car-3dprint)
+---
 
-A project to take an original car body design and prepare it for **3D printing**, focusing on:
+### 1. Concept Car Body Design & CFD-Ready Geometry Development *(in progress)*
 
-- Surface cleanup and thickening in Blender
-- Splitting the model into printable parts
-- Tolerances and supports for FDM printing
+**Domain:** Automotive Design & Aerodynamics  
+**Tools:** Blender · cfMesh · OpenFOAM · ParaView  
 
-*(Content coming soon: design notes, STL files, photos of the printed model.)*
+A self-driven follow-up project extending my **IED Turin car design work** into an
+**engineering-focused CFD pipeline**.  
+The goal is to convert an early-stage concept into a **CFD-ready, watertight 3D geometry**
+and study external aerodynamics using a fully open-source workflow.
+
+**Focus areas**
+
+- Surface continuity and mesh-aware modeling in Blender  
+- Preparation of CFD-suitable geometry (watertight STL)  
+- Unstructured meshing using **cfMesh**  
+- Aerodynamic simulation using **OpenFOAM**  
+- Flow visualization and qualitative analysis in **ParaView**
+
+➡️ **[Read the full CFD project write-up →](/projects/cfd-car-geometry/)**
 
 ---
 
-## 2. IED Turin – Car Design Summer Course
+### 2. IED Turin – Car Design Summer Course
 
 **Repo:** [ied-cardesign](https://github.com/tjaditya/ied-cardesign)
 
-In summer 2025, I attended a **3-week onsite car design course at Istituto Europeo di Design (IED), Turin**.  
-The program focused on the complete workflow of exterior car design – from initial sketches to a 3D model.
+In summer 2025, I attended a **3-week onsite car design course at  
+Istituto Europeo di Design (IED), Turin**.
+
+The program focused on the complete exterior car design workflow — from sketching
+and proportion studies to a physical clay model.
 
 **Course highlights**
 
 - Studio sessions on proportions, stance, and surface language  
-- Sketching iterations with one-to-one feedback  
-- Translating the selected concept into a 3D physical model using clay modeling  
-- Classroom sessions on trends in automotive design  
+- Iterative sketching with one-to-one feedback  
+- Translating concepts into a physical clay model  
+- Classroom sessions on automotive design trends  
 
 **What I did**
 
 - Developed an original exterior concept for a compact performance car  
 - Created side, front, and rear views exploring different surface treatments  
-- Built a digital version of the chosen concept in Photoshop  
-- Built a clay model based on the final sketch using the course tools and workflow  
-- Presented the final design to faculty and peers at the end of the program  
+- Built a digital version of the selected concept in Photoshop  
+- Built a clay model using the course tools and workflow  
+- Presented the final design to faculty and peers  
 
 **Industry Exposure (Exclusive Garage Visits)**  
-Alongside the studio coursework, I visited several **private and specialist automotive garages** in and around Turin. These visits provided firsthand exposure to:
+Alongside studio coursework, I visited several **private and specialist automotive garages**
+in and around Turin, gaining exposure to:
 
 - Performance vehicle restoration and custom tuning  
-- Fabrication techniques used for bodywork and aerodynamic add-ons  
+- Fabrication techniques for bodywork and aerodynamic components  
 - Motorsport-influenced modification processes  
-- High-precision detailing and finishing methods  
+- High-precision finishing and detailing  
 
-These interactions helped me understand how design intent translates into real-world build constraints, and how engineers, fabricators, and designers collaborate to create performance-oriented vehicles.
+These visits helped bridge the gap between **design intent** and
+**real-world build constraints**.
 
-
-[View full IED Turin project with photos →](/ied-turin.md)
-
----
-
-### 3. Raspberry Pi Autonomous Rover *(in progress)*
-**Repo (planned):** `raspi-rover` (coming soon)
-
-Implementing:
-
-- Lane Keeping Assist (LKA)
-- Adaptive Cruise Control (ACC)
-- Autonomous Emergency Braking (AEB)
-
-Focus areas: sensor fusion, control algorithms, and robust embedded software.
+➡️ **[View full IED Turin project with photos →](/ied-turin/)**
 
 ---
 
-### 4. CFD Pipeline for Car Aerodynamics *(in progress)*
+### 3. Car 3D Print – Concept to Prototype *(planned)*
 
-- Rebuilding the car design at IED, Turin in Blender as a **clean, watertight 3D model**  
-- Preparing the model for **CFD analysis** and 3D printing  
-- Running aerodynamic simulations using **cfMesh + OpenFOAM + ParaView**  
-- Documenting the full pipeline (concept → 3D → CFD → prototype) in the GitHub repo
+**Repo:** [car-3dprint](https://github.com/tjaditya/car-3dprint)
 
-**What I learnt**
+A project focused on converting a car body design into a **3D-printable prototype**.
 
-- Blender modelling → mesh generation using **cfMesh**
-- Simulation with **OpenFOAM**
-- Post-processing in **ParaView**
+Planned work includes:
 
-Will include: scenarios, meshes, simulation cases, and comparison plots.
+- Surface cleanup and thickening in Blender  
+- Splitting the model into printable parts  
+- Managing tolerances and supports for FDM printing  
+
+*(Design notes, STL files, and photos of the printed model will be added.)*
 
 ---
 
-More projects and detailed writeups will be added over time.
+### 4. Raspberry Pi Autonomous Rover *(in progress)*
+
+**Repo (planned):** `raspi-rover`
+
+A hands-on robotics project implementing:
+
+- **Lane Keeping Assist (LKA)**  
+- **Adaptive Cruise Control (ACC)**  
+- **Autonomous Emergency Braking (AEB)**  
+
+Focus areas include sensor fusion, control algorithms, and robust embedded software
+development on Raspberry Pi.
+
+---
+
+More projects and detailed write-ups will be added over time as I continue to expand
+my engineering and design work.
