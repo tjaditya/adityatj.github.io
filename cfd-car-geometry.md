@@ -40,6 +40,10 @@ These decisions were made to establish an aerodynamic intent at the concept stag
 At this phase, the emphasis was on **form exploration**, without prematurely constraining the design
 based on simulation requirements.
 
+![Concept form exploration in Blender](/assets/projects/cfd/screenshots/01-concept-form.png)
+
+*Early concept-stage form exploration in Blender, focusing on proportions, stance, and overall surface flow before applying simulation constraints.*
+
 ---
 
 ## Full Body Surface Development
@@ -54,6 +58,10 @@ Key refinements included:
 
 These changes were made with the understanding that  
 **surface quality directly impacts CFD mesh stability and solution accuracy**.
+
+![Refined surface development](/assets/projects/cfd/screenshots/02-surface-refinement.png)
+
+*Progressive refinement into a continuous body shell, improving curvature continuity and eliminating sharp, non-physical transitions.*
 
 ---
 
@@ -71,6 +79,10 @@ Steps taken:
 This phase was critical in bridging the gap between  
 **design-oriented modeling** and **engineering simulation**.
 
+![Mesh-aware topology cleanup](/assets/projects/cfd/screenshots/03-topology-cleanup.png)
+
+*Topology cleanup and edge-flow alignment performed with mesh stability and CFD suitability in mind.*
+
 ---
 
 ## CFD-Ready Geometry Preparation
@@ -85,6 +97,10 @@ Key decisions included:
 - Including a ground plane for external aerodynamics studies  
 
 The final geometry was exported as a **watertight STL**, suitable for unstructured meshing using **cfMesh**.
+
+![Final CFD-ready geometry on ground plane](/assets/projects/cfd/screenshots/04-cfd-ready-geometry.png)
+
+*Final watertight geometry placed on a ground plane, prepared for STL export and unstructured meshing using cfMesh.*
 
 ---
 
