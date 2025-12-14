@@ -106,6 +106,102 @@ The final geometry was exported as a **watertight STL**, suitable for unstructur
 
 ## CFD Pipeline Overview
 
-The project uses a fully open-source CFD workflow:
+This project extends beyond geometry preparation into a complete **open-source CFD workflow**,
+built to study external aerodynamics of the concept vehicle.
+
+The pipeline integrates **geometry preparation, meshing, simulation, and post-processing** as a
+single end-to-end process.
+
+Blender (.blend)
+↓ STL export
+cfMesh (surface & volume meshing)
+↓
+OpenFOAM (steady-state solver – simpleFoam)
+↓
+ParaView (flow visualization & analysis)
+
+
+---
+
+### Geometry Export & Pre-processing
+
+The finalized car body is exported from Blender as a **watertight STL** with simplified features
+appropriate for external aerodynamics studies.
+
+Pre-processing considerations include:
+
+- Consistent surface normals
+- Removal of small geometric details that do not influence flow
+- Placement on a ground plane to simulate road interaction
+- Alignment with the global coordinate system for CFD domain setup
+
+---
+
+### Meshing with cfMesh
+
+Unstructured surface and volume meshes are generated using **cfMesh**, with focus on:
+
+- Adequate surface resolution to capture curvature
+- Local refinement near critical regions (front fascia, roof, rear)
+- Maintaining reasonable cell counts for computational efficiency
+- Ensuring mesh quality suitable for steady-state solvers
+
+Mesh quality is evaluated using standard metrics such as skewness and non-orthogonality
+before proceeding to simulation.
+
+---
+
+### Flow Simulation with OpenFOAM
+
+Simulations are performed using **OpenFOAM**, currently focusing on **steady-state external flow**
+using the `simpleFoam` solver.
+
+Key aspects include:
+
+- Inlet velocity boundary conditions representing uniform freestream flow
+- No-slip conditions on the vehicle surface
+- Appropriate outlet pressure conditions
+- Turbulence modeling suitable for external automotive flows
+
+The emphasis at this stage is on **solver setup, stability, and convergence behavior**, rather than
+absolute aerodynamic coefficients.
+
+---
+
+### Post-processing & Visualization in ParaView
+
+Simulation results are analyzed using **ParaView** to visualize and interpret flow behavior.
+
+Current analysis includes:
+
+- Velocity magnitude contours
+- Streamline visualization around the vehicle body
+- Identification of separation regions and wake structure
+- Qualitative comparison between different geometry iterations
+
+These visualizations help build intuition about how design changes influence airflow patterns.
+
+---
+
+### Current Focus
+
+The current phase of this work focuses on:
+
+- Validating the correctness of the CFD pipeline
+- Understanding the impact of meshing choices on solution stability
+- Learning how boundary conditions influence flow behavior
+- Developing confidence in interpreting CFD results qualitatively
+
+---
+
+### Planned Extensions
+
+Future work will include:
+
+- Boundary layer mesh refinement
+- Mesh sensitivity and grid independence studies
+- Pressure coefficient and force extraction
+- Comparative studies between multiple design iterations
+- Exploration of data-driven or AI-assisted surrogate models for rapid evaluation
 
 ← [Back to Projects](/projects/)
