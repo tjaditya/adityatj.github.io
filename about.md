@@ -51,10 +51,18 @@ I am using my break year to build engineering depth through project-based learni
 
 ---
 
+## Learning Context
+
+A brief reflective overview of my break year and how my academic exposure and independent work shaped my current engineering direction is available below.
+
+→ [View Learning Journey (optional context)](/learning-journey/)
+
+---
+
 ## Visual Studies (Sketchbook)
 
-Alongside engineering and robotics, I maintain a small sketchbook where I practice **shading, perspective, and form studies**.  
-These exercises help me build visual intuition for design — skills that support my work in **car modeling, aerodynamics, and concept development**.
+Alongside engineering and robotics, I maintain a small sketchbook focused on shading, perspective, and form studies.  
+These exercises support my work in car modeling, aerodynamics, and concept development.
 
 [View my sketchbook →](/sketchbook/)
 
