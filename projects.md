@@ -67,7 +67,7 @@ in and around Turin, gaining exposure to:
 These visits helped bridge the gap between **design intent** and
 **real-world build constraints**.
 
-➡️ **[View full IED Turin project with photos →](/ied-turin/)**
+➡️ **[View full IED Turin project with photos →](/projects/ied-turin/)**
 
 ---
 
