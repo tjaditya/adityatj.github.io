@@ -1,55 +1,51 @@
 ---
 layout: page
-title: Learning Journey – Europe 2025
+title: Learning Journey
 permalink: /learning-journey/
 ---
 
 ## Context
 
-In summer 2025, alongside my **car design coursework at IED Turin**, I spent time across
-multiple European cities.  
+This page captures reflective context from my break year following high school, during which I intentionally stepped beyond a classroom-only learning path to gain exposure to real-world design processes, engineering workflows, and independent technical exploration.
 
-This period provided exposure not only to academic studio environments, but also to
-**automotive history, design culture, and real-world engineering contexts** that shaped
-how I now think about design and problem-solving.
-
-Rather than a day-by-day travel diary, this page highlights a few **learning-oriented
-takeaways** from that experience.
+Rather than documenting events chronologically, this page highlights how specific experiences shaped my thinking as an aspiring **Mechanical & Robotics Engineer** and influenced the direction of my current project work.
 
 ---
 
-## Design & Engineering Perspective
+## From Design Exposure to Engineering Direction
 
-During this journey, I engaged with automotive spaces where **design intent, engineering
-constraints, and manufacturing realities intersect**.
+My academic engagement at **IED Turin** provided an early introduction to the complete workflow of exterior car design — from ideation and sketching to physical clay modeling and digital refinement.
 
-Key influences included:
+Working through these stages helped me understand how early design decisions affect downstream feasibility, particularly in terms of:
+- Surface continuity  
+- Manufacturability  
+- Translating visual intent into physically realizable geometry  
 
-- Studio-based learning and critiques at **IED Turin**
-- Visits to automotive museums and design spaces in Italy and Europe
-- Exposure to performance vehicles, restoration work, and motorsport heritage
-- Observing how form, function, and constraints coexist in real vehicles
+This exposure directly influenced my decision to extend the IED concept into an independent **CFD-ready car geometry project**, where design modeling is evaluated through engineering constraints such as mesh quality, boundary conditions, and simulation stability.
 
-These experiences reinforced the importance of **engineering-aware design**, which now
-directly informs my work in **CFD-based car modeling and prototyping**.
-
----
-
-## Personal Growth & Reflection
-
-Living independently in a new country and navigating unfamiliar environments helped me
-develop adaptability, confidence, and clarity in my interests.
-
-This experience strengthened my motivation to pursue **mechanical engineering and
-robotics**, combining analytical rigor with design intuition.
+→ [View IED Turin – Car Design Project](/projects/ied-turin/)  
+→ [View CFD-Ready Car Geometry Project](/projects/cfd-car-geometry/)
 
 ---
 
-## Optional: Personal Travel Journal (WIP)
+## Independent Learning & Project Mindset
 
-For personal documentation, I maintain a detailed travel journal capturing daily
-experiences and reflections.
+Alongside formal coursework, this period reinforced the importance of **self-driven learning** and structured experimentation.
 
-➡️ **[View personal travel journal (PDF – work in progress)](/assets/docs/FIRST-INTERNATIONAL-TRIP-WIP.pdf)**
+Navigating unfamiliar environments, adapting to new tools, and working with limited guidance strengthened my ability to:
+- Learn independently  
+- Ask better technical questions  
+- Reflect critically on my own work  
+- Document progress methodically  
 
-*This journal is informal and shared only as optional context.*
+These habits now shape how I approach engineering projects, including my work on CFD pipelines, robotics systems, and embedded software.
+
+---
+
+## Closing Note
+
+This learning journey complements the technical projects presented on this site by providing context for how my interests, approach to problem-solving, and engineering focus have evolved.
+
+My primary work is documented in the **Projects** section, where each project is presented with clear objectives, technical depth, and ongoing learning outcomes.
+
+→ [Explore Projects](/projects/)
