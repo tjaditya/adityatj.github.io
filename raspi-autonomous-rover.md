@@ -45,6 +45,40 @@ The focus is on **system integration and engineering understanding**,
 not merely assembling hardware components.
 
 ---
+## System Block Diagram
+
+The autonomous rover is structured as a modular system, separating **perception,
+decision-making, and control**, similar to real-world autonomous vehicle architectures.
+
+Sensors
+(Camera, Distance Sensors)
+↓
+Perception Layer
+(Image processing, distance estimation)
+↓
+Decision & Planning Layer
+(LKA / ACC / AEB logic, state machines)
+↓
+Control Layer
+(Steering & speed control algorithms)
+↓
+Actuation Layer
+(Motor drivers, steering mechanism)
+↓
+Physical Rover
+
+
+**System characteristics**
+
+- Clear separation between sensing, decision logic, and control  
+- Modular design allows individual subsystems to be developed and tested independently  
+- Safety-critical modules (e.g., AEB) are designed to override lower-priority behaviors  
+- Architecture is intentionally simple to prioritize understanding and robustness  
+
+This block-level structure helps in isolating failures, debugging behavior,
+and extending the system with additional sensors or algorithms.
+
+---
 
 ## Autonomous Features Under Development
 
