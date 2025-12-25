@@ -178,7 +178,7 @@ Key mesh characteristics:
 - Local refinement near the front fascia, roof, and rear wake region
 - Quality checks performed for skewness and non-orthogonality
 
-The mesh was found to be suitable for steady-state external aerodynamics studies using `simpleFoam`.
+The mesh quality was verified to be numerically suitable for steady-state solver convergence using `simpleFoam`.
 
 ![CFD mesh visualization](/assets/projects/cfd/results/mesh.png)
 
@@ -205,17 +205,15 @@ absolute aerodynamic coefficients.
 
 ## CFD Results & Convergence Validation
 
-The steady-state simulation reached **mathematical convergence after approximately 2000 iterations** for the chosen solver and mesh configuration.
+The steady-state simulation reached numerical convergence after approximately **2000 SIMPLE iterations**.
 
-Convergence assessment was based on:
-- Reduction of solver residuals by multiple orders of magnitude
-- Stabilization of force coefficients over successive iterations
+Convergence was assessed using both:
+- **Final residual reduction** for governing equations, and
+- **Stabilization of integrated force coefficients** over successive iterations.
 
-This confirmed that the solver setup, mesh, and boundary conditions were internally consistent and numerically stable for steady-state external flow analysis.
+![CFD convergence summary showing residual and force coefficient histories](/assets/projects/cfd/results/convergence-combined.png)
 
-![Residuals and force convergence](/assets/projects/cfd/results/convergence.png)
-
-*Representative residual and force coefficient convergence history for the steady-state simulation.*
+*Combined convergence history showing final residual decay (top) and force coefficient stabilization (bottom). Residuals reduce by multiple orders of magnitude while aerodynamic coefficients reach steady values, confirming numerical and practical convergence of the steady-state solution.*
 
 ---
 
