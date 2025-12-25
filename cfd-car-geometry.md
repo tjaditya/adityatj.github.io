@@ -122,19 +122,32 @@ OpenFOAM (steady-state solver – simpleFoam)
 ParaView (flow visualization & analysis)
 ```
 
+
 ---
 
 ### Geometry Export & Pre-processing
 
-The finalized car body is exported from Blender as a **watertight STL** with simplified features
-appropriate for external aerodynamics studies.
+The finalized **external body shell** was prepared in Blender and exported as a **watertight STL**
+specifically for **external automotive aerodynamics analysis**.
 
-Pre-processing considerations include:
+At this stage, the focus was on producing a **clean, simulation-ready geometry** rather than a
+visually complete vehicle model.
 
-- Consistent surface normals
-- Removal of small geometric details that do not influence flow
-- Placement on a ground plane to simulate road interaction
-- Alignment with the global coordinate system for CFD domain setup
+Pre-processing emphasized practical CFD requirements:
+
+- Verification of **fully closed, watertight surfaces** suitable for volume meshing  
+- Consistent and outward-facing **surface normals** across the entire body  
+- Removal of fine decorative features that do not meaningfully affect external flow behavior  
+- **Removal of wheels and ground plane** to simplify the problem and isolate body-driven flow effects  
+- Simplification of underbody geometry to avoid unnecessary meshing complexity  
+- Alignment of the geometry with the **global coordinate system** for consistent domain setup  
+
+By excluding wheels and ground interaction at this phase, the simulation setup remains
+computationally tractable and better suited for studying **baseline flow behavior, separation,
+and wake structure** around the body.
+
+This stage establishes a robust foundation for unstructured meshing and steady-state
+CFD analysis using **snappyHexMesh** and **OpenFOAM**.
 
 ---
 
