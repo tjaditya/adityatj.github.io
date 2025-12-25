@@ -122,7 +122,6 @@ OpenFOAM (steady-state solver – simpleFoam)
 ParaView (flow visualization & analysis)
 ```
 
-
 ---
 
 ### Geometry Export & Pre-processing
@@ -130,8 +129,10 @@ ParaView (flow visualization & analysis)
 The finalized **external body shell** was prepared in Blender and exported as a **watertight STL**
 specifically for **external automotive aerodynamics analysis**.
 
-At this stage, the focus was on producing a **clean, simulation-ready geometry** rather than a
+At this stage, the focus was on producing a **clean, simulation-ready geometry**, rather than a
 visually complete vehicle model.
+
+#### Pre-processing objectives
 
 Pre-processing emphasized practical CFD requirements:
 
@@ -146,8 +147,29 @@ By excluding wheels and ground interaction at this phase, the simulation setup r
 computationally tractable and better suited for studying **baseline flow behavior, separation,
 and wake structure** around the body.
 
-This stage establishes a robust foundation for unstructured meshing and steady-state
-CFD analysis using **snappyHexMesh** and **OpenFOAM**.
+---
+
+#### Surface Closure & Watertight Verification
+
+![Watertight surface verification and internal face inspection](/assets/projects/cfd/screenshots/geometry-watertight-check.png)
+
+*Inspection of the closed external body shell in Blender. Internal faces and open boundaries were
+checked and corrected to ensure a fully watertight surface suitable for unstructured meshing.*
+
+---
+
+#### Final External Body Shell (CFD-ready)
+
+![Final CFD-ready external body shell](/assets/projects/cfd/screenshots/final-cfd-body-shell.png)
+
+*Final external body geometry after cleanup and simplification. Wheels and ground plane have been
+removed to isolate the influence of body shape on external flow behavior.*
+
+---
+
+This geometry establishes a robust foundation for **unstructured meshing using snappyHexMesh**
+and steady-state CFD analysis in **OpenFOAM**, enabling stable mesh generation and solver convergence
+in subsequent stages.
 
 ---
 
