@@ -1,8 +1,7 @@
 ---
 layout: page
+title: Aditya J Thamarasseril
 ---
-
-# Aditya J Thamarasseril
 
 Aspiring **Mechanical & Robotics Engineer**, with interests in:
 
