@@ -151,7 +151,7 @@ and wake structure** around the body.
 
 #### Surface Closure & Watertight Verification
 
-![Watertight surface verification and internal face inspection](/assets/projects/cfd/screenshots/geometry-watertight-check.png)
+![Watertight surface verification and internal face inspection](/assets/projects/cfd/screenshots/05-geometry-watertight-check.png)
 
 *Inspection of the closed external body shell in Blender. Internal faces and open boundaries were
 checked and corrected to ensure a fully watertight surface suitable for unstructured meshing.*
@@ -160,7 +160,7 @@ checked and corrected to ensure a fully watertight surface suitable for unstruct
 
 #### Final External Body Shell (CFD-ready)
 
-![Final CFD-ready external body shell](/assets/projects/cfd/screenshots/final-cfd-body-shell.png)
+![Final CFD-ready external body shell](/assets/projects/cfd/screenshots/06-final-cfd-body-shell.png)
 
 *Final external body geometry after cleanup and simplification. Wheels and ground plane have been
 removed to isolate the influence of body shape on external flow behavior.*
