@@ -5,10 +5,10 @@ permalink: /projects/cfd-car-geometry/
 ---
 ← [Back to Projects](/projects/)
 
-**Tools:** Blender · cfMesh · OpenFOAM · ParaView  
+**Tools:** Blender · snappyHexMesh · OpenFOAM · ParaView
 **Domain:** Automotive Design & Aerodynamics  
 **Type:** Self-driven follow-up project  
-**Status:** In progress
+**Status:** Phase 1 complete (CFD pipeline established and converged)
 
 ---
 
@@ -96,11 +96,11 @@ Key decisions included:
 - Removing fine decorative details that do not influence flow behavior  
 - Including a ground plane for external aerodynamics studies  
 
-The final geometry was exported as a **watertight STL**, suitable for unstructured meshing using **cfMesh**.
+The final geometry was exported as a **watertight STL**, suitable for unstructured meshing using **snappyHexMesh**.
 
 ![Final CFD-ready geometry on ground plane](/assets/projects/cfd/screenshots/04-cfd-ready-geometry.png)
 
-*Final watertight geometry placed on a ground plane, prepared for STL export and unstructured meshing using cfMesh.*
+*Final watertight geometry placed on a ground plane, prepared for STL export and unstructured meshing using snappyHexMesh.*
 
 ---
 
@@ -112,14 +112,15 @@ built to study external aerodynamics of the concept vehicle.
 The pipeline integrates **geometry preparation, meshing, simulation, and post-processing** as a
 single end-to-end process.
 
+```text
 Blender (.blend)
 ↓ STL export
-cfMesh (surface & volume meshing)
+snappyHexMesh (surface & volume meshing)
 ↓
 OpenFOAM (steady-state solver – simpleFoam)
 ↓
 ParaView (flow visualization & analysis)
-
+```
 
 ---
 
@@ -137,9 +138,9 @@ Pre-processing considerations include:
 
 ---
 
-### Meshing with cfMesh
+### Meshing with snappyHexMesh
 
-Unstructured surface and volume meshes are generated using **cfMesh**, with focus on:
+Unstructured surface and volume meshes are generated using **snappyHexMesh**, with focus on:
 
 - Adequate surface resolution to capture curvature
 - Local refinement near critical regions (front fascia, roof, rear)
@@ -148,6 +149,23 @@ Unstructured surface and volume meshes are generated using **cfMesh**, with focu
 
 Mesh quality is evaluated using standard metrics such as skewness and non-orthogonality
 before proceeding to simulation.
+
+---
+
+## Mesh Quality Summary
+
+Mesh quality was evaluated prior to simulation to ensure numerical stability.
+
+Key mesh characteristics:
+- Unstructured hex-dominant mesh generated using **snappyHexMesh**
+- Local refinement near the front fascia, roof, and rear wake region
+- Quality checks performed for skewness and non-orthogonality
+
+The mesh was found to be suitable for steady-state external aerodynamics studies using `simpleFoam`.
+
+![CFD mesh visualization](/assets/projects/cfd/results/mesh.png)
+
+*Surface and volume mesh visualization highlighting refinement regions.*
 
 ---
 
@@ -161,47 +179,83 @@ Key aspects include:
 - Inlet velocity boundary conditions representing uniform freestream flow
 - No-slip conditions on the vehicle surface
 - Appropriate outlet pressure conditions
-- Turbulence modeling suitable for external automotive flows
+- Turbulence modeling appropriate for steady-state external automotive flow studies
 
 The emphasis at this stage is on **solver setup, stability, and convergence behavior**, rather than
 absolute aerodynamic coefficients.
 
 ---
 
-### Post-processing & Visualization in ParaView
+## CFD Results & Convergence Validation
 
-Simulation results are analyzed using **ParaView** to visualize and interpret flow behavior.
+The steady-state simulation reached **mathematical convergence after approximately 2000 iterations** for the chosen solver and mesh configuration.
 
-Current analysis includes:
+Convergence assessment was based on:
+- Reduction of solver residuals by multiple orders of magnitude
+- Stabilization of force coefficients over successive iterations
 
-- Velocity magnitude contours
-- Streamline visualization around the vehicle body
-- Identification of separation regions and wake structure
-- Qualitative comparison between different geometry iterations
+This confirmed that the solver setup, mesh, and boundary conditions were internally consistent and numerically stable for steady-state external flow analysis.
 
-These visualizations help build intuition about how design changes influence airflow patterns.
+![Residuals and force convergence](/assets/projects/cfd/results/convergence.png)
 
----
-
-### Current Focus
-
-The current phase of this work focuses on:
-
-- Validating the correctness of the CFD pipeline
-- Understanding the impact of meshing choices on solution stability
-- Learning how boundary conditions influence flow behavior
-- Developing confidence in interpreting CFD results qualitatively
+*Representative residual and force coefficient convergence history for the steady-state simulation.*
 
 ---
 
-### Planned Extensions
+### Post-processing & Flow Interpretation (ParaView)
 
-Future work will include:
+With a converged steady-state solution obtained, **ParaView** is used primarily for
+**qualitative flow interpretation**, rather than exploratory visualization.
 
-- Boundary layer mesh refinement
-- Mesh sensitivity and grid independence studies
-- Pressure coefficient and force extraction
-- Comparative studies between multiple design iterations
+Post-processing focuses on:
+
+- Velocity magnitude contours to identify acceleration and deceleration regions
+- Streamline analysis to examine flow attachment and separation behavior
+- Visualization of wake structure and recirculation zones behind the vehicle
+- Qualitative comparison of flow features between geometry iterations
+
+Key qualitative observations include:
+- Flow acceleration over the hood and roof
+- Separation and wake formation behind the vehicle
+- Regions of reduced velocity and recirculation in the rear wake
+
+The emphasis at this stage is on **developing physical intuition** and understanding how
+design features influence external aerodynamics, rather than extracting precise
+aerodynamic coefficients.
+
+---
+
+## Engineering Takeaways
+
+This phase of the project reinforced several key engineering lessons:
+
+- Clean surface geometry is critical for stable meshing and solver convergence  
+- Small design features can significantly influence wake structure  
+- Numerical convergence does not guarantee physical accuracy, but is a necessary first step  
+- CFD is most effective when used comparatively, not as an absolute predictor  
+
+These insights now guide how I approach further design iterations and analysis.
+
+---
+
+## Next Technical Focus
+
+With the CFD pipeline successfully established and converged, current efforts are focused on:
+
+- Interpreting flow features and wake behavior
+- Studying sensitivity to meshing and boundary conditions
+- Planning controlled geometry modifications for comparative analysis
+- Building confidence in linking design changes to aerodynamic trends
+
+---
+
+## Planned Extensions
+
+Future extensions of this work include:
+
+- Mesh refinement and grid sensitivity studies
+- Extraction of pressure coefficients and aerodynamic forces
+- Comparative analysis between multiple design iterations
 - Exploration of data-driven or AI-assisted surrogate models for rapid evaluation
 
 ← [Back to Projects](/projects/)
