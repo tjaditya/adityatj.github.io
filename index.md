@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Home
 ---
 
 # Aditya J Thamarasseril
 
-Aspiring **Mechanical & Robotics Engineer** from India with interests in:
+Aspiring **Mechanical & Robotics Engineer**, with interests in:
 
 - **Vehicle design and aerodynamics** (CFD, car design)
 - **Robotics and IoT** (Raspberry Pi, autonomous systems)
@@ -15,12 +14,11 @@ Aspiring **Mechanical & Robotics Engineer** from India with interests in:
 I’m currently working on:
 
 - A **Raspberry Pi–based autonomous rover** implementing LKA, ACC, and AEB  
-- A **CFD car aerodynamics pipeline** using Blender → cfMesh → OpenFOAM → ParaView  
-- Extending my **IED Turin car design project** into a full 3D CAD + aerodynamics model  
-
-This site showcases my projects, coursework, photography, and travelogue during my break year as I prepare for undergraduate studies in **Mechanical Engineering** and **Robotics**.
+- A **CFD-based car aerodynamics pipeline**, extending my IED Turin car design into a clean, watertight 3D model for simulation using Blender → cfMesh → OpenFOAM → ParaView
+ 
+This site showcases my projects, coursework, photography, and learning experiences during my break year as I prepare for undergraduate studies in **Mechanical Engineering and Robotics**.
 
 ---
 
 ### ▶️ Explore My Work
-[View my projects →](/projects)
+[View Engineering Projects →](/projects)
