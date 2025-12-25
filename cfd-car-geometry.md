@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Concept Car Body Design & CFD-Ready Geometry Development
+title: Concept Car Geometry Development & CFD Pipeline Implementation
 permalink: /projects/cfd-car-geometry/
 ---
 ← [Back to Projects](/projects/)
