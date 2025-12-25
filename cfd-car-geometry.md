@@ -85,25 +85,6 @@ This phase was critical in bridging the gap between
 
 ---
 
-## CFD-Ready Geometry Preparation
-
-Before simulation, the geometry was simplified and prepared specifically for CFD use.
-
-Key decisions included:
-
-- Closing and simplifying wheel arches  
-- Cleaning and flattening underbody geometry  
-- Removing fine decorative details that do not influence flow behavior  
-- Including a ground plane for external aerodynamics studies  
-
-The final geometry was exported as a **watertight STL**, suitable for unstructured meshing using **snappyHexMesh**.
-
-![Final CFD-ready geometry on ground plane](/assets/projects/cfd/screenshots/04-cfd-ready-geometry.png)
-
-*Final watertight geometry placed on a ground plane, prepared for STL export and unstructured meshing using snappyHexMesh.*
-
----
-
 ## CFD Pipeline Overview
 
 This project extends beyond geometry preparation into a complete **open-source CFD workflow**,
@@ -124,28 +105,53 @@ ParaView (flow visualization & analysis)
 
 ---
 
-### Geometry Export & Pre-processing
+### Geometry Export & Technical Pre-processing
 
-The finalized **external body shell** was prepared in Blender and exported as a **watertight STL**
-specifically for **external automotive aerodynamics analysis**.
+The finalized **external body shell** was prepared in Blender and exported as a
+**watertight STL** specifically for **external automotive aerodynamics analysis**.
 
-At this stage, the focus was on producing a **clean, simulation-ready geometry**, rather than a
-visually complete vehicle model.
+At this stage, the focus was on producing a **clean, simulation-ready geometry**
+rather than a visually complete vehicle model. The geometry represents an
+*abstracted aerodynamic body*, suitable for stable meshing and solver convergence.
 
-#### Pre-processing objectives
+Key pre-processing decisions included:
 
-Pre-processing emphasized practical CFD requirements:
-
-- Verification of **fully closed, watertight surfaces** suitable for volume meshing  
-- Consistent and outward-facing **surface normals** across the entire body  
-- Removal of fine decorative features that do not meaningfully affect external flow behavior  
+- Ensuring a **fully closed, watertight external surface** suitable for volume meshing  
+- Verification and correction of **surface normal orientation** across the entire body  
+- Removal of fine decorative features that do not meaningfully influence external flow  
 - **Removal of wheels and ground plane** to simplify the problem and isolate body-driven flow effects  
-- Simplification of underbody geometry to avoid unnecessary meshing complexity  
-- Alignment of the geometry with the **global coordinate system** for consistent domain setup  
+- Simplification of the underbody geometry to avoid unnecessary meshing complexity  
+- Alignment of the geometry with the **global coordinate system** for consistent CFD domain setup  
 
-By excluding wheels and ground interaction at this phase, the simulation setup remains
-computationally tractable and better suited for studying **baseline flow behavior, separation,
-and wake structure** around the body.
+By excluding wheels and ground interaction at this phase, the simulation setup
+remains computationally tractable and well-suited for studying **baseline flow
+behavior, separation, and wake structure** around the body.
+
+---
+
+#### Final External Body Shell (CFD-ready)
+
+![Final CFD-ready external body shell](/assets/projects/cfd/screenshots/06-final-cfd-body-shell.png)
+
+*Final external body geometry after cleanup and simplification. Wheels and ground
+plane have been removed to isolate the aerodynamic influence of the body shape.*
+
+---
+
+#### Surface Closure & Normal Orientation Verification
+
+![Watertight surface and normal direction verification](/assets/projects/cfd/screenshots/05-geometry-watertight-check.png)
+
+*Inspection of the closed external body shell in Blender with face normal
+visualization enabled. Surface normals were checked and corrected to ensure
+consistent outward orientation (blue), eliminating inverted faces (red) that
+could lead to meshing or solver instability.*
+
+---
+
+This geometry establishes a robust foundation for **unstructured meshing using
+snappyHexMesh** and steady-state CFD analysis in **OpenFOAM**, enabling stable mesh
+generation and reliable solver convergence in subsequent stages.
 
 ---
 
