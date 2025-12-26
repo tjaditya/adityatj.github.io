@@ -24,10 +24,10 @@ I completed my schooling in India and am currently in a **purposeful break year*
   - **5:** Physics 1, Physics 2, Physics C Mechanics  
   - **4:** Calculus BC (with **5** in AB subscore), Physics C E&M
 - **MITx 6.00.1x – Introduction to Computer Science & Programming (Python):** 89%  
-- **MITx 6.00.2x – Computational Thinking with Python:** In progress  
+- **MITx 6.00.2x – Computational Thinking with Python:** 88%  
 
 ### Standardized Exams
-- **SAT:** 1440 (Nov attempt; Dec result pending)  
+- **SAT:** 1460 (Math 800; Evidence-Based Reading & Writing 660)  
 - **JEE Main 2025:** 91.1 percentile  
 
 ---
