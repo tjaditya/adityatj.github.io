@@ -6,85 +6,95 @@ permalink: /about/
 
 # About Me
 
-I’m **Aditya Jaikish Thamarasseril**, an aspiring **Mechanical & Robotics Engineer** passionate about vehicle aerodynamics, computational design, robotics, and embedded systems.
+I’m **Aditya Jaikish Thamarasseril**, an aspiring **Mechanical & Robotics Engineer** with a strong interest in vehicle aerodynamics, computational design, robotics, and embedded systems.
 
-I completed my schooling in India and am currently in a **break year** to deepen my engineering skills through hands-on projects, advanced coursework, and self-driven research.
+I am particularly drawn to engineering problems that lie at the intersection of **physics, computation, and real-world constraints**—where modeling, simulation, and experimentation inform each other. I enjoy working through complete engineering workflows, from early-stage concept development to implementation, validation, and iteration.
+
+I completed my schooling in India and am currently in a **purposeful break year**, focused on building engineering depth through hands-on projects, advanced coursework, and self-directed technical exploration.
 
 ---
 
 ## Academics
 
-- **Class X (CBSE – Oakridge International School, a Nord Anglia Education school):** 89%  
+- **Class X (CBSE – Oakridge International School, Nord Anglia Education):** 89%  
 - **Class XII (Telangana IPE):** 94.5% (PCM 94.76%)
+
+### Advanced & University-Level Coursework
+- **AP Scholar with Distinction**
+  - **5:** Physics 1, Physics 2, Physics C Mechanics  
+  - **4:** Calculus BC (with **5** in AB subscore), Physics C E&M
+- **MITx 6.00.1x – Introduction to Computer Science & Programming (Python):** 89%  
+- **MITx 6.00.2x – Computational Thinking with Python:** In progress  
 
 ### Standardized Exams
 - **SAT:** 1440 (Nov attempt; Dec result pending)  
 - **JEE Main 2025:** 91.1 percentile  
 
-### AP Scholar with Distinction
-- **5:** Physics 1, Physics 2, Physics C Mechanics  
-- **4:** Calculus BC (with **5** in AB subscore), Physics C E&M  
-
-### University-level Coursework
-- **MITx 6.00.1x – Introduction to Computer Science & Programming (Python):** 89%  
-- **MITx 6.00.2x – Computational Thinking with Python:** In progress  
-
 ---
 
-## Current Focus (Break Year)
+## Break Year Focus
 
-I am using my break year to build engineering depth through project-based learning and real-world workflows.
+My break year is centered on **project-based engineering**, where I deliberately work through full technical pipelines—concept definition, modeling, simulation, debugging, and interpretation—rather than isolated exercises.
 
 ### 🔧 Engineering & Design Projects
-- **CFD-based Car Aerodynamics Pipeline**  
-  Blender → cfMesh → OpenFOAM → ParaView  
-  (Extending my IED Turin concept design into a full CFD and 3D-printable model)
+
+- **Vehicle Concept Design – IED Turin (Onsite Summer Program)**  
+  Completed an intensive **three-week onsite program** in Turin focused on automotive concept development, proportion, surfacing, and design thinking.  
+  Developed an original car concept through iterative sketching, package studies, and form exploration under faculty guidance.  
+  This project later became the foundation for my independent computational aerodynamics and simulation work.
+
+- **CFD-Based Car Aerodynamics Pipeline**  
+  *Blender → cfMesh → OpenFOAM → ParaView*  
+  Extending an earlier vehicle concept into a fully simulated aerodynamic model.  
+  Current focus areas include geometry cleanup, mesh quality, boundary condition setup, solver behavior, and interpretation of pressure, velocity, and force coefficients.  
+  Planned extensions include iterative design refinement and 3D-printable components.
 
 - **Autonomous Rover (Raspberry Pi)**  
-  Implementing **LKA, ACC, and AEB**, along with sensor fusion and real-time control algorithms  
+  Designing and implementing **Lane Keeping Assist (LKA)**, **Adaptive Cruise Control (ACC)**, and **Automatic Emergency Braking (AEB)**.  
+  Emphasis is on sensor integration, control logic, real-time decision making, and reliable embedded system behavior.
 
-### 💻 Technical Skills I’m Developing
-- Linux fundamentals & shell-based workflows  
-- Git/GitHub and version control  
-- Python for simulation and automation  
-- Robotics & embedded systems programming  
+### 💻 Tools & Workflows I Actively Use
+- Linux-based development environments  
+- Git & GitHub for version control and documentation  
+- Python for simulation, automation, and data handling  
+- Embedded systems and robotics programming fundamentals  
 
 ---
 
 ## Learning Context
 
-A brief reflective overview of my break year and how my academic exposure and independent work shaped my current engineering direction is available below.
+A short reflective overview of how my academic exposure and independent work shaped my current engineering direction is available here:
 
-→ [View Learning Journey (optional context)](/learning-journey/)
+→ [View Learning Journey](/learning-journey/)
 
 ---
 
 ## Visual Studies (Sketchbook)
 
-Alongside engineering and robotics, I maintain a small sketchbook focused on shading, perspective, and form studies.  
-These exercises support my work in car modeling, aerodynamics, and concept development.
+Alongside engineering, I maintain a small sketchbook focused on **form, perspective, and shading**.  
+These studies support my work in vehicle modeling, aerodynamic surfaces, spatial reasoning, and concept development.
 
-[View my sketchbook →](/sketchbook/)
+→ [View my sketchbook](/sketchbook/)
 
 ---
 
 ## What This Portfolio Represents
 
-This site is a living record of my learning journey — combining:
+This site is a living record of my learning journey, bringing together:
 
 - Mechanical design  
-- Robotics  
-- Computational physics  
+- Robotics & embedded systems  
+- Computational physics and simulation  
 - Programming  
 - Visual studies  
 - Photography and travel documentation  
 
-I am continuously updating it as I make progress on projects, experiments, and university preparation.
+I update it continuously as my projects evolve and my understanding deepens.
 
 ---
 
 ## Explore My Work
 
-To see my engineering and design projects, visit the **Projects** page.
+To see detailed engineering and design projects:
 
 ➡️ [View My Projects →](/projects/)
