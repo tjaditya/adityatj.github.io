@@ -44,7 +44,7 @@ My break year is centered on **project-based engineering**, where I deliberately
   This project later became the foundation for my independent computational aerodynamics and simulation work.
 
 - **CFD-Based Car Aerodynamics Pipeline**  
-  *Blender → cfMesh → OpenFOAM → ParaView*  
+  *Blender → snappyHexMesh → OpenFOAM → ParaView*  
   Extending an earlier vehicle concept into a fully simulated aerodynamic model.  
   Current focus areas include geometry cleanup, mesh quality, boundary condition setup, solver behavior, and interpretation of pressure, velocity, and force coefficients.  
   Planned extensions include iterative design refinement and 3D-printable components.
