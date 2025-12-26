@@ -3,6 +3,7 @@ layout: page
 title: Concept Car Geometry Development and CFD Pipeline Implementation
 permalink: /projects/cfd-car-geometry/
 ---
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 [Back to Projects](/projects/)
 
@@ -75,6 +76,45 @@ This phase was critical in bridging the gap between design-oriented modeling and
 
 Topology cleanup and edge-flow alignment performed with mesh stability and CFD suitability in mind.
 
+<section style="margin: 1.5rem 0;">
+  <h2>Interactive Geometry</h2>
+  <p>
+    The interactive model below shows the external body geometry used for CFD analysis and physical prototyping.
+    It is intended to highlight surface continuity and curvature transitions before meshing and simulation.
+  </p>
+
+  <model-viewer
+    src="/assets/projects/cfd/models/car-body.glb"
+    alt="Concept car external body geometry (CFD-ready)"
+    camera-controls
+    interaction-prompt="auto"
+    shadow-intensity="0"
+    exposure="1"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    style="
+      width: 100%;
+      max-width: 960px;
+      height: 520px;
+      background: #f6f6f6;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      display: block;
+      margin: 1rem 0;
+    ">
+  </model-viewer>
+
+  <p style="font-size: 0.95rem; opacity: 0.85; margin-top: 0.25rem;">
+    Tip: drag to rotate, scroll to zoom, right-drag to pan.
+  </p>
+
+  <noscript>
+    <p>
+      Interactive 3D preview requires JavaScript. You can download the model here:
+      <a href="/assets/projects/cfd/models/car-body.glb">car-body.glb</a>
+    </p>
+  </noscript>
+</section>
 ---
 
 ## Physical Prototyping and Feedback-Driven Iteration (3D Printing)
