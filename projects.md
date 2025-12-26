@@ -8,38 +8,42 @@ permalink: /projects/
 
 ---
 
-### 1. Concept Car Geometry Development & CFD Pipeline Implementation
+### 1. Concept Car Geometry Development and CFD Pipeline Implementation
 
-**Domain:** Automotive Design & Aerodynamics  
-**Tools:** Blender · snappyHexMesh · OpenFOAM · ParaView  
+**Domain:** Automotive Design and Aerodynamics  
+**Tools:** Blender, snappyHexMesh, OpenFOAM, ParaView  
 **Status:** Phase 1 complete
 
-A self-driven follow-up project extending my **IED Turin car design work** into a
-complete **open-source CFD pipeline**.
+A self-driven follow-up project extending my **IED Turin car design work** into a complete  
+**design–simulation–physical prototyping pipeline**, built entirely using open-source tools.
 
 The project focuses on taking an early-stage concept car design through
-**geometry refinement, meshing, solver setup, and convergence**, with emphasis on
-engineering-aware modeling and numerical stability rather than visual styling alone.
+**geometry refinement, meshing, solver setup, convergence, and validation**, with emphasis on
+engineering-aware modeling, numerical stability, and iteration rather than visual styling alone.
 
 **Focus areas**
 
 - Surface continuity and mesh-aware modeling in Blender  
-- Preparation of CFD-suitable, watertight geometry  
-- Unstructured hex-dominant meshing using **snappyHexMesh**  
-- Steady-state external aerodynamics using **OpenFOAM (simpleFoam)**  
-- Flow visualization and qualitative interpretation in **ParaView**  
+- Preparation of CFD-suitable, watertight external geometry  
+- Unstructured hex-dominant meshing using snappyHexMesh  
+- Steady-state external aerodynamics using OpenFOAM (simpleFoam)  
+- Flow visualization and qualitative interpretation in ParaView  
+- Physical prototyping through 3D printing and feedback-driven geometry iteration  
 
-➡️ **[Read the full CFD project write-up →](/projects/cfd-car-geometry/)**
+[Read the full CFD project write-up →](/projects/cfd-car-geometry/)
 
 ---
 
-### 2. IED Turin – Car Design Summer Course
+### 2. IED Turin – Automotive Concept Design (Onsite Summer Program)
 
-In summer 2025, I attended a **3-week onsite car design course at  
-Istituto Europeo di Design (IED), Turin**.
+In summer 2025, I attended a **three-week onsite automotive design program** at  
+**Istituto Europeo di Design (IED), Turin**.
 
-The program focused on the complete exterior car design workflow — from sketching
-and proportion studies to a physical clay model.
+The course focused on the complete exterior car design workflow, from sketching and proportion
+studies to physical model development.
+
+This project laid the **design foundation** for my later computational aerodynamics,
+geometry refinement, and physical prototyping work.
 
 **Course highlights**
 
@@ -48,16 +52,17 @@ and proportion studies to a physical clay model.
 - Translating concepts into a physical clay model  
 - Classroom sessions on automotive design trends  
 
-**What I did**
+**My work during the course**
 
 - Developed an original exterior concept for a compact performance car  
 - Created side, front, and rear views exploring surface treatments  
-- Built a digital version of the selected concept in Photoshop  
-- Built a clay model using the course tools and workflow  
+- Built a digital version of the selected concept for refinement  
+- Constructed a physical clay model using the course workflow  
 - Presented the final design to faculty and peers  
 
-**Industry Exposure (Exclusive Garage Visits)**  
-Alongside studio coursework, I visited several **private and specialist automotive garages**
+**Industry Exposure (Garage Visits)**
+
+Alongside studio coursework, I visited several private and specialist automotive garages
 in and around Turin, gaining exposure to:
 
 - Performance vehicle restoration and custom tuning  
@@ -65,40 +70,28 @@ in and around Turin, gaining exposure to:
 - Motorsport-influenced modification processes  
 - High-precision finishing and detailing  
 
-These visits helped bridge the gap between **design intent** and
-**real-world build constraints**.
+These visits helped bridge the gap between **design intent** and **real-world build constraints**.
 
-➡️ **[View full IED Turin project with photos →](/projects/ied-turin/)**
-
----
-
-### 3. Car 3D Print – Concept to Prototype *(planned)*
-
-A project focused on converting a car body design into a **3D-printable prototype**.
-
-Planned work includes:
-
-- Surface cleanup and wall-thickness control in Blender  
-- Splitting the model into printable sections  
-- Managing tolerances and supports for FDM printing  
-
-*(Design notes, STL files, and photos of the printed model will be added.)*
+[View full IED Turin project with photos →](/projects/ied-turin/)
 
 ---
 
-### 4. Raspberry Pi Autonomous Rover *(in progress)*
+### 3. Raspberry Pi Autonomous Rover (In Progress)
 
 A hands-on robotics project focused on building an **autonomous ground rover**
 using Raspberry Pi.
 
-Planned and ongoing work includes:
+The project is aimed at developing a working understanding of sensing, control,
+and real-time decision making in embedded robotic systems.
 
-- **Lane Keeping Assist (LKA)**  
-- **Adaptive Cruise Control (ACC)**  
-- **Autonomous Emergency Braking (AEB)**  
+**Planned and ongoing work**
 
-Focus areas include sensor integration, control logic, and robust embedded software
-development.
+- Lane Keeping Assist (LKA)  
+- Adaptive Cruise Control (ACC)  
+- Autonomous Emergency Braking (AEB)  
+
+Focus areas include sensor integration, control logic, real-time decision making,
+and robust embedded software development.
 
 ---
 
