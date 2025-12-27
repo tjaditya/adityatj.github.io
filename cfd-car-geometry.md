@@ -111,7 +111,7 @@ Topology cleanup and edge-flow alignment performed with mesh stability and CFD s
   <noscript>
     <p>
       Interactive 3D preview requires JavaScript. You can download the model here:
-      <a href="/assets/projects/cfd/models/car-body.obj">car-body.glb</a>
+      <a href="/assets/projects/cfd/models/car-body.glb">car-body.glb</a>
     </p>
   </noscript>
 </section>
