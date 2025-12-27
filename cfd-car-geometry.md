@@ -266,15 +266,19 @@ Together, these comparisons highlight the dominant role of overall body curvatur
 
 Velocity magnitude contours at multiple vertical sections, illustrating the evolution of flow acceleration from the ground plane to the roof.
 
-### Mid-Plane and Rear Periphery Flow Behavior
+### Mid-Plane and Side Periphery Flow Behavior
 
-Additional velocity slices were taken along the vehicle centerline and near the rear periphery, where the geometry transitions into a wing-like form. These visualizations reveal localized flow acceleration and directional changes in regions strongly influenced by rear geometry.
+Additional velocity slices were extracted along the vehicle centerline and through the side periphery, intersecting the wing-like structural elements that emerge from the body, curve outward, and rejoin downstream as a continuous hoop-like form.
 
-While no force-based conclusions are drawn at this stage, the observed flow patterns emphasize the sensitivity of wake structure to rear surface shaping and taper.
+These sections were chosen to examine how localized three-dimensional geometry influences flow acceleration, deviation, and interaction with the surrounding flow field. The mid-plane slice provides a reference view of overall flow attachment and separation along the primary flow direction, while the periphery slice captures the effect of the wing–hoop structure on local velocity distribution and flow redirection.
 
-![Velocity slices – mid-plane and rear periphery](/assets/projects/cfd/results/velocity-magnitude-periphery.png)
+The periphery slice highlights regions of localized acceleration and flow curvature induced by the side-mounted feature, illustrating how such geometry introduces three-dimensional effects even in an otherwise symmetric external flow. Together, these views emphasize how secondary design elements can influence local flow behavior without dominating overall wake structure.
 
-Velocity magnitude slices through the vehicle mid-plane and rear periphery, highlighting localized flow behavior influenced by rear geometry.
+![Velocity magnitude – vertical mid-plane slice](/assets/projects/cfd/results/velocity-vertical-slice-mid.png)
+![Velocity magnitude – vertical periphery slice](/assets/projects/cfd/results/velocity-vertical-slice-periphery.png)
+
+Velocity magnitude slices through the vehicle mid-plane and side periphery, illustrating localized flow behavior influenced by the wing–hoop structural geometry.
+
 
 ### Wake Structure and Streamtracer Visualization
 
