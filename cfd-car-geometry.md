@@ -180,109 +180,156 @@ Inspection of the closed external body shell in Blender with face normal visuali
 
 ---
 
-## Meshing with snappyHexMesh
+## CFD Meshing Strategy (snappyHexMesh)
 
-Unstructured surface and volume meshes are generated using snappyHexMesh, with focus on:
-- adequate surface resolution to capture curvature
-- local refinement near critical regions (front fascia, roof, rear wake region)
-- maintaining reasonable cell counts for computational efficiency
-- ensuring mesh quality suitable for steady-state solvers
+Surface and volume meshes were generated using **snappyHexMesh**, selected for its ability to produce hex-dominant unstructured meshes around complex external geometries within an open-source CFD workflow.
 
-Mesh quality is evaluated using standard metrics (for example, skewness and non-orthogonality) before proceeding to simulation.
+The meshing strategy focused on:
+- capturing global body curvature without excessive cell counts
+- applying local refinement in aerodynamically sensitive regions (front fascia, roof, rear wake)
+- maintaining mesh quality suitable for steady-state solvers
+
+Rather than uniformly refining the entire domain, refinement regions were applied selectively. This reflects how CFD is used in early-stage aerodynamic exploration—balancing physical resolution, numerical stability, and computational efficiency.
+
+At this stage, the objective was not high-fidelity force prediction, but the generation of a stable mesh capable of resolving major flow features and wake behavior.
 
 ---
 
-## Mesh Quality Summary
+## Mesh Quality Verification
 
-Mesh quality was evaluated prior to simulation to ensure numerical stability.
+Mesh quality was evaluated prior to simulation to ensure numerical robustness and solver stability.
 
-Key mesh characteristics:
-- unstructured hex-dominant mesh generated using snappyHexMesh
-- local refinement near the front fascia, roof, and rear wake region
-- quality checks performed for skewness and non-orthogonality
+Quality checks included:
+- non-orthogonality
+- skewness
+- cell aspect ratios
 
-The mesh quality was verified to be numerically suitable for steady-state solver convergence using simpleFoam.
+The final mesh satisfied recommended quality thresholds for steady-state external aerodynamics using **simpleFoam**. While not optimized for precise aerodynamic coefficient prediction, the mesh was verified to be suitable for studying flow patterns, separation behavior, and wake structure.
+
 
 ![CFD mesh visualization](/assets/projects/cfd/results/mesh.png)
 
-Surface and volume mesh visualization highlighting refinement regions.
+Surface and volume mesh visualization highlighting local refinement near the front fascia, roof, and rear wake region.
 
 ---
 
-## Flow Simulation with OpenFOAM
+## Steady-State Flow Simulation Setup (OpenFOAM)
 
-Simulations are performed using OpenFOAM, currently focusing on steady-state external flow using the simpleFoam solver.
+Flow simulations were performed using **OpenFOAM** with the **simpleFoam** solver, appropriate for steady-state, incompressible external aerodynamics.
 
-Key aspects include:
-- inlet velocity boundary conditions representing uniform freestream flow
-- no-slip conditions on the vehicle surface
-- outlet pressure boundary conditions
-- turbulence modeling appropriate for steady-state external automotive flow studies
+Key setup elements included:
+- uniform inlet velocity representing freestream conditions
+- no-slip boundary condition on the vehicle surface
+- fixed pressure outlet boundary condition
+- turbulence modeling suitable for steady external flow studies
 
-The emphasis at this stage is on solver setup, stability, and convergence behavior rather than absolute aerodynamic coefficients.
+The objective of this phase was to establish a stable and converged solver configuration capable of producing physically interpretable flow fields, rather than absolute aerodynamic performance metrics.
 
 ---
 
 ## CFD Results and Convergence Validation
 
-The steady-state simulation reached numerical convergence after approximately 2000 SIMPLE iterations.
+The steady-state solution converged after approximately 2000 SIMPLE iterations.
 
 Convergence was assessed using:
-- residual reduction for governing equations, and
+- residual reduction for governing equations
 - stabilization of integrated force coefficients over successive iterations
 
-![CFD convergence summary showing residual and force coefficient histories](/assets/projects/cfd/results/convergence-combined.png)
+Both criteria were used together to distinguish numerical convergence from physically meaningful stabilization. This reinforced the understanding that residual decay alone is not sufficient to assess solution reliability.
+
+![CFD convergence history](/assets/projects/cfd/results/convergence-combined.png)
 
 Convergence history showing residual decay and force coefficient stabilization, confirming numerical and practical convergence of the steady-state solution.
 
 ---
 
-## Post-processing and Flow Interpretation (ParaView)
+## Flow Visualization and Qualitative Analysis (ParaView)
 
-With a converged steady-state solution obtained, ParaView is used primarily for qualitative flow interpretation.
+With a converged steady-state solution obtained, **ParaView** was used to perform qualitative flow analysis aimed at understanding three-dimensional flow behavior around the body.
 
-Post-processing focuses on:
-- velocity magnitude contours to identify acceleration and deceleration regions
-- streamline analysis to examine flow attachment and separation behavior
-- visualization of wake structure and recirculation zones behind the vehicle
-- qualitative comparison of flow features between geometry iterations
+Post-processing focused on:
+- velocity magnitude contours to examine flow acceleration and deceleration over key surfaces  
+- sectional velocity slices at multiple heights to study vertical variation in the flow field  
+- streamline and streamtracer visualization to examine wake formation and recirculation behavior  
 
-Key qualitative observations include:
-- flow acceleration over the hood and roof
-- separation and wake formation behind the vehicle
-- regions of reduced velocity and recirculation in the rear wake
+Rather than relying on a single visualization, multiple complementary views were used to build a physically consistent picture of the external flow.
 
-The emphasis at this stage is on developing physical intuition and understanding how design features influence external aerodynamics.
+### Velocity Distribution Across Vertical Sections
+
+Horizontal velocity slices taken near the ground, at mid-height, and near the roof reveal how flow behavior evolves across the height of the body. Near-ground regions show reduced velocities influenced by boundary-layer effects and simplified underbody geometry. Mid-height slices capture smoother acceleration along the side surfaces, while roof-level slices exhibit the highest velocities, consistent with acceleration over curved upper surfaces.
+
+Together, these comparisons highlight the dominant role of overall body curvature in governing flow attachment and wake development.
+
+![Velocity magnitude – ground, mid, and roof sections](/assets/projects/cfd/results/velocity-magnitude-sections.png)
+
+Velocity magnitude contours at multiple vertical sections, illustrating the evolution of flow acceleration from the ground plane to the roof.
+
+### Mid-Plane and Rear Periphery Flow Behavior
+
+Additional velocity slices were taken along the vehicle centerline and near the rear periphery, where the geometry transitions into a wing-like form. These visualizations reveal localized flow acceleration and directional changes in regions strongly influenced by rear geometry.
+
+While no force-based conclusions are drawn at this stage, the observed flow patterns emphasize the sensitivity of wake structure to rear surface shaping and taper.
+
+![Velocity slices – mid-plane and rear periphery](/assets/projects/cfd/results/velocity-magnitude-periphery.png)
+
+Velocity magnitude slices through the vehicle mid-plane and rear periphery, highlighting localized flow behavior influenced by rear geometry.
+
+### Wake Structure and Streamtracer Visualization
+
+To further examine wake behavior, streamtracer visualization was used to track flow paths downstream of the vehicle. Seed points placed upstream of the body reveal how flow separates at the rear surfaces and forms recirculation regions in the wake.
+
+The streamtracers make the three-dimensional nature of the wake more apparent than scalar contours alone, highlighting regions of flow reversal, mixing, and gradual recovery toward freestream conditions. This view complements the velocity slice analysis by providing an intuitive visualization of wake size, structure, and coherence.
+
+![Wake streamtracer visualization](/assets/projects/cfd/results/wake-streamtracers.png)
+
+Streamtracer visualization showing flow separation and recirculation in the vehicle wake, illustrating wake structure and downstream recovery.
+
+Overall, these visualizations were used to connect geometric design decisions to observed flow behavior, reinforcing CFD’s role as an exploratory and interpretive tool during early-stage aerodynamic development.
+
+### Pressure Field Visualization and Wake Correlation
+
+To complement the velocity-based analysis, a three-dimensional pressure field visualization was examined to better understand the relationship between surface geometry and wake formation.
+
+The pressure distribution highlights higher-pressure regions near the frontal surfaces and a pronounced low-pressure zone in the rear wake. This pressure deficit downstream of the body is consistent with the observed flow separation and recirculation patterns identified in the velocity slices and streamtracer visualizations.
+
+Rather than serving as a basis for quantitative force estimation, the pressure field is used here to reinforce physical intuition—illustrating how pressure gradients drive flow separation and influence wake structure in external aerodynamics.
+
+![3D pressure field visualization](/assets/projects/cfd/results/pressure-field-3d.png)
+
+Three-dimensional pressure field visualization showing frontal pressure buildup and low-pressure regions in the vehicle wake, correlated with observed flow separation and recirculation.
 
 ---
 
-## Engineering Takeaways
+## Interpretation and Engineering Insights
 
-This phase of the project reinforced several key engineering lessons:
-- clean surface geometry is critical for stable meshing and solver convergence
-- physical prototypes can reveal design issues not obvious in purely digital workflows
-- feedback-driven iteration improves both form quality and simulation readiness
-- numerical convergence does not guarantee physical accuracy, but it is a necessary first step
-- CFD is most effective when used comparatively, not as an absolute predictor
+This project demonstrated how design intent, geometric discipline, and simulation are tightly coupled in early-stage engineering workflows.
+
+The CFD results show smooth acceleration of flow over the hood and roof, indicating that the refined surface continuity achieved during Blender-based modeling supports largely attached flow across the upper body. In contrast, flow separation and a low-velocity wake form near the rear of the vehicle, highlighting the dominant influence of rear geometry on wake structure and pressure recovery.
+
+Importantly, these flow features were consistent with both physical intuition and observations made during the 3D-printed prototype review. Surface transitions that appeared abrupt or visually ambiguous in early physical prints correspond to regions of increased flow disturbance in the simulation, reinforcing the value of combining physical prototyping with computational analysis.
+
+From an engineering perspective, this phase reinforced several key lessons:
+- clean, watertight geometry is essential for stable meshing and solver convergence  
+- mesh resolution and refinement choices directly influence which flow features can be meaningfully interpreted  
+- numerical convergence is a prerequisite for analysis, but does not guarantee physical accuracy  
+- CFD is most effective as a comparative and exploratory tool rather than an absolute predictor in early design stages  
+
+Overall, the project established a repeatable, open-source pipeline that links concept design, physical feedback, and computational analysis. This foundation enables systematic geometry iteration and provides a framework for deeper aerodynamic studies in future phases.
 
 ---
 
 ## Next Technical Focus
 
-With the CFD pipeline successfully established and converged, current efforts are focused on:
-- interpreting flow features and wake behavior
-- studying sensitivity to meshing and boundary conditions
-- planning controlled geometry modifications for comparative analysis
-- building confidence in linking design changes to aerodynamic trends
+With the CFD pipeline successfully established and validated, active development on this project is now paused. The primary focus has shifted toward a Raspberry Pi–based autonomous rover project, where attention is directed to real-time sensing, control, and embedded systems.
+
+The CFD pipeline developed here remains available as a reusable framework for future design studies or comparative analysis, should the need arise.
 
 ---
 
-## Planned Extensions
+## Potential Extensions
+- Comparitive study with the modified model
+- Extraction of basic aerodynamic coefficients for relative comparison
+- Controlled geometry variations to study qualitative aerodynamic trends
 
-Future extensions of this work include:
-- mesh refinement and grid sensitivity studies
-- extraction of pressure coefficients and aerodynamic forces
-- comparative analysis between multiple design iterations
-- exploration of data-driven or AI-assisted surrogate models for rapid evaluation
 
 [Back to Projects](/projects/)
