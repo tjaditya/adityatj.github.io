@@ -12,6 +12,8 @@ Domain: Automotive Design and Aerodynamics
 Type: Self-driven follow-up project  
 Status: Phase 1 complete (digital-to-physical workflow established; CFD pipeline converged)
 
+**GitHub Repository:**  
+👉 https://github.com/tjaditya/cfd-car-geometry
 ---
 
 ## Project Context
