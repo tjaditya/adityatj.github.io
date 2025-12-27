@@ -260,7 +260,9 @@ Horizontal velocity slices taken near the ground, at mid-height, and near the ro
 
 Together, these comparisons highlight the dominant role of overall body curvature in governing flow attachment and wake development.
 
-![Velocity magnitude – ground, mid, and roof sections](/assets/projects/cfd/results/velocity-magnitude-sections.png)
+![Velocity magnitude – Roof section](/assets/projects/cfd/results/velocity-roof.png)
+![Velocity magnitude – Mid section](/assets/projects/cfd/results/velocity-mid.png)
+![Velocity magnitude – Ground section](/assets/projects/cfd/results/velocity-underbody.png)
 
 Velocity magnitude contours at multiple vertical sections, illustrating the evolution of flow acceleration from the ground plane to the roof.
 
