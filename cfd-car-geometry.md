@@ -207,7 +207,7 @@ Quality checks included:
 The final mesh satisfied recommended quality thresholds for steady-state external aerodynamics using **simpleFoam**. While not optimized for precise aerodynamic coefficient prediction, the mesh was verified to be suitable for studying flow patterns, separation behavior, and wake structure.
 
 
-![CFD mesh visualization](/assets/projects/cfd/results/mesh.png)
+![CFD mesh visualization](/assets/projects/cfd/results/mesh-1.png)
 
 Surface and volume mesh visualization highlighting local refinement near the front fascia, roof, and rear wake region.
 
