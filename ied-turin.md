@@ -136,7 +136,13 @@ At the closing ceremony, I was awarded the completion certificate for the IED Tu
 - Developed a named concept identity (**Wyndra – WINDing cobRA**), inspired by a vehicle engineered to dominate winding roads, with a poised, coiled stance reflected in its side profile and rear haunches  
 - Built a detailed clay model to validate form, volume, and physical proportions  
 - Digitally refined highlights, reflections, and surface transitions in Photoshop  
-- Extending this work into a **Blender CAD model → CFD simulation → 3D-printed prototype** pipeline to study dynamic airflow behavior and engineering feasibility  
+- Extending this work into a **Blender CAD model → CFD simulation → 3D-printed prototype** pipeline to study dynamic airflow behavior and engineering feasibility
 
+---
 
-[← Back to Projects](/projects/)
+### Engineering Extension
+
+Following the IED course, this concept was extended independently into an engineering workflow. The exterior form was reconstructed as a clean 3D CAD model and analyzed using open-source CFD tools to study airflow behavior and surface interaction.
+
+→ [View the Blender → CFD → Physical Prototyping extension](/projects/cfd-car-geometry/)  
+← [Back to Projects](/projects/)
