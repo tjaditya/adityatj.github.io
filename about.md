@@ -16,8 +16,8 @@ I completed my schooling in India and am currently in a **purposeful break year*
 
 ## Academics
 
-- **Class X (CBSE – Oakridge International School, Nord Anglia Education):** 89%  
 - **Class XII (Telangana IPE):** 94.5% (PCM 94.76%)
+- **Class X (CBSE – Oakridge International School, Nord Anglia Education):** 89%  
 
 ### Advanced & University-Level Coursework
 - **AP Scholar with Distinction**
