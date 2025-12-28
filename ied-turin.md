@@ -28,17 +28,18 @@ A 3-week onsite program focused on the complete workflow of exterior car design�
 *If Lamborghini and Ferrari never had a rivalry and instead collaborated to build a car, what would that vehicle look like?*
 
 The objective was to explore a unified design language that blends:
-- Lamborghini’s aggressive, angular stance and dramatic surface breaks, and
-- Ferrari’s sculpted elegance, fluid proportions, and aerodynamic purity.
+- Lamborghini’s aggressive, angular stance and dramatic surface breaks, and  
+- Ferrari’s sculpted elegance, fluid proportions, and sense of motion.
 
-Rather than imitating either brand, the intent was to imagine a credible synthesis — a car that feels emotionally Italian yet technically forward-looking.
+Rather than imitating either brand, the intent was to imagine a credible synthesis — a car designed for emotional engagement on the road, combining visual tension with flowing, performance-oriented proportions.
 
 **Concept Codename: Wyndra (WINDing cobRA)**  
-The concept was named **Wyndra**, derived from:
-- **Wind** — reflecting airflow-driven surface development and future aerodynamic exploration  
-- **Cobra** — inspired by the poised, coiled stance and tension seen in the side profile and rear haunches  
+The concept was named **Wyndra**, inspired by the idea of a car engineered to **dominate winding roads**.
 
-This identity guided proportion, surface tension, and the later decision to extend the project into aerodynamic simulation and engineering refinement.
+- **Winding** — reflecting agility, balance, and driver-focused performance through corners rather than straight-line speed  
+- **Cobra** — evoking a poised, coiled stance, with muscular rear haunches and controlled surface tension suggesting readiness and precision  
+
+This identity guided proportion, stance, and surface development. The emphasis on motion and control later motivated an engineering extension of the project into aerodynamic study and simulation.
 
 ---
 ## 1. Concept Development
@@ -131,9 +132,11 @@ At the closing ceremony, I was awarded the completion certificate for the IED Tu
 
 ## Project Summary
 
-- Explored multiple proportion and surface studies during the ideation phase  
-- Built a detailed clay model to validate form and volume  
-- Digitally refined details (highlights, reflections, surface tension) in Photoshop  
-- Extending this work into a **Blender CAD model → CFD simulation → 3D-printed prototype** pipeline  
+- Explored multiple proportion and surface studies during the ideation phase, guided by a conceptual brief imagining a collaborative Lamborghini–Ferrari design language  
+- Developed a named concept identity (**Wyndra – WINDing cobRA**), inspired by a vehicle engineered to dominate winding roads, with a poised, coiled stance reflected in its side profile and rear haunches  
+- Built a detailed clay model to validate form, volume, and physical proportions  
+- Digitally refined highlights, reflections, and surface transitions in Photoshop  
+- Extending this work into a **Blender CAD model → CFD simulation → 3D-printed prototype** pipeline to study dynamic airflow behavior and engineering feasibility  
+
 
 [← Back to Projects](/projects/)
