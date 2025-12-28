@@ -22,7 +22,25 @@ permalink: /projects/ied-turin/
 A 3-week onsite program focused on the complete workflow of exterior car design—from ideation sketching to clay modeling and digital refinement.
 
 ---
+## Design Brief & Concept Identity
 
+**Design Prompt**  
+*If Lamborghini and Ferrari never had a rivalry and instead collaborated to build a car, what would that vehicle look like?*
+
+The objective was to explore a unified design language that blends:
+- Lamborghini’s aggressive, angular stance and dramatic surface breaks, and
+- Ferrari’s sculpted elegance, fluid proportions, and aerodynamic purity.
+
+Rather than imitating either brand, the intent was to imagine a credible synthesis — a car that feels emotionally Italian yet technically forward-looking.
+
+**Concept Codename: Wyndra (WINDing cobRA)**  
+The concept was named **Wyndra**, derived from:
+- **Wind** — reflecting airflow-driven surface development and future aerodynamic exploration  
+- **Cobra** — inspired by the poised, coiled stance and tension seen in the side profile and rear haunches  
+
+This identity guided proportion, surface tension, and the later decision to extend the project into aerodynamic simulation and engineering refinement.
+
+---
 ## 1. Concept Development
 
 Early sketches exploring stance, surface transitions, and proportions.
