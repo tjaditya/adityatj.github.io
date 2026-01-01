@@ -71,7 +71,7 @@ The diagram below illustrates the end-to-end architecture of the ADAS simulation
 platform, highlighting the separation between algorithm development, validation, and embedded
 execution.
 
-![ADAS system architecture diagram](/assets/projects/adas/architecture.svg)
+![ADAS system architecture diagram](/assets/projects/adas/architecture.png)
 
 *System architecture showing laptop-based simulation, hardware abstraction, and Raspberry Pi
 embedded execution.*
