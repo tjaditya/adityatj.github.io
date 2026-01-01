@@ -67,38 +67,14 @@ The embedded system implements the same logical interfaces used in simulation, e
 
 ## System Architecture Diagram
 
-The diagram below illustrates the **end-to-end architecture** of the ADAS simulation and deployment platform, highlighting the separation between **algorithm development**, **validation**, and **embedded execution**.
+The diagram below illustrates the end-to-end architecture of the ADAS simulation and deployment
+platform, highlighting the separation between algorithm development, validation, and embedded
+execution.
 
-~~~mermaid
-flowchart LR
-    subgraph Laptop["Laptop-Based Development & Simulation"]
-        A1["ADAS Algorithms<br/>(LKA / ACC / AEB)"]
-        A2["Sensor Simulation<br/>and Replay Engine"]
-        A3["Visualization & Logging"]
-        A4["Hardware-Agnostic Interfaces"]
-    end
+![ADAS system architecture diagram](/assets/projects/adas/architecture.svg)
 
-    subgraph Embedded["Raspberry Pi Embedded Platform"]
-        B1["Hardware Abstraction Layer (HAL)"]
-        B2["Real Sensors<br/>(Distance / Vision)"]
-        B3["Real-Time Control Loop"]
-        B4["Actuators<br/>(Motors / Braking)"]
-    end
-
-    A2 --> A1
-    A1 --> A4
-    A4 --> B1
-    B2 --> B1
-    B1 --> B3
-    B3 --> B4
-    B3 --> A3
-~~~
-
-This architecture emphasizes:
-
-- Algorithm portability across simulation and hardware  
-- Validation before physical execution  
-- Clean separation of perception, control logic, and hardware access  
+*System architecture showing laptop-based simulation, hardware abstraction, and Raspberry Pi
+embedded execution.*
 
 ---
 
