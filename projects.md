@@ -76,22 +76,39 @@ These visits helped bridge the gap between **design intent** and **real-world bu
 
 ---
 
-### 3. Raspberry Pi Autonomous Rover (In Progress)
+### 3. ADAS Simulation and Deployment Platform using Raspberry Pi (In Progress)
 
-A hands-on robotics project focused on building an **autonomous ground rover**
-using Raspberry Pi.
+An engineering-focused robotics project aimed at building a **modular simulation and deployment
+platform** for **Advanced Driver Assistance Systems (ADAS)** concepts.
 
-The project is aimed at developing a working understanding of sensing, control,
-and real-time decision making in embedded robotic systems.
+Rather than starting with a fully autonomous rover, this project follows an
+**infrastructure-first approach**, where ADAS algorithms are:
 
-**Planned and ongoing work**
+- developed and validated on a laptop using simulation and replayable data,
+- tested through clean hardware-agnostic interfaces, and
+- incrementally deployed onto a Raspberry Pi–based rover only after verification.
+
+The emphasis is on **system architecture, correctness, and safety-aware development**, mirroring
+real-world automotive and robotics workflows.
+
+**Target ADAS capabilities (to be developed incrementally)**
 
 - Lane Keeping Assist (LKA)  
 - Adaptive Cruise Control (ACC)  
 - Autonomous Emergency Braking (AEB)  
 
-Focus areas include sensor integration, control logic, real-time decision making,
-and robust embedded software development.
+**Core focus areas**
+
+- Hardware abstraction and mock sensor interfaces  
+- Laptop-based simulation and algorithm validation  
+- Real-time sensing and control on Raspberry Pi  
+- Controlled transition from simulation to hardware execution  
+- Embedded software structure, safety constraints, and observability  
+
+This project serves as a **testbed for embedded systems, robotics, and ADAS-oriented system design**,
+with features introduced only after validation in a controlled environment.
+
+[View ADAS rover system design and development plan →](/projects/adas-rover/)
 
 ---
 
