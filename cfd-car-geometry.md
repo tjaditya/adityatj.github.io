@@ -294,7 +294,8 @@ The resulting streamtracers reveal a low-velocity wake region immediately behind
 
 Consistent with the steady-state RANS formulation and simplified boundary conditions used in this phase, the wake appears smooth and coherent and is interpreted qualitatively rather than as a representation of unsteady turbulence.
 
-![Wake streamtracer visualization](/assets/projects/cfd/results/wake-streamtracers.png)
+![Wake streamtracer visualization](/assets/projects/cfd/results/wake-streamtracers-1.png)
+![Wake streamtracer visualization](/assets/projects/cfd/results/wake-streamtracers-2.png)
 
 *Streamtracer visualization illustrating wake separation and downstream recovery behind the vehicle.*
 
@@ -312,27 +313,27 @@ Higher pressure regions are observed on the frontal surfaces, while lower pressu
 
 ## Interpretation and Engineering Insights
 
-This project demonstrated how design intent, geometric discipline, and simulation are tightly coupled in early-stage engineering workflows.
+This project shows how design intent, geometric quality, and CFD analysis come together in early-stage aerodynamic studies.
 
-The CFD results show smooth acceleration of flow over the hood and roof, indicating that the refined surface continuity achieved during Blender-based modeling supports largely attached flow across the upper body. In contrast, flow separation and a low-velocity wake form near the rear of the vehicle, highlighting the dominant influence of rear geometry on wake structure and pressure recovery.
+The CFD results indicate mostly attached flow over the hood and roof, reflecting the smooth surface transitions achieved during geometry refinement. In contrast, the rear geometry drives wake formation, with flow separation producing a clear velocity deficit and low-pressure region downstream. These patterns appear consistently across normalized velocity slices, streamtracer visualizations, and surface pressure plots.
 
-Importantly, these flow features were consistent with both physical intuition and observations made during the 3D-printed prototype review. Surface transitions that appeared abrupt or visually ambiguous in early physical prints correspond to regions of increased flow disturbance in the simulation, reinforcing the value of combining physical prototyping with computational analysis.
+Vertical velocity comparisons show that wake effects are strongest near the body and underbody, while the flow above the roof remains largely freestream-dominated. Mid-plane and peripheral slices further show how secondary geometric features introduce localized three-dimensional effects without changing the overall wake structure. Together, these results highlight the importance of overall body shape and rear taper in controlling separation and wake recovery.
 
-From an engineering perspective, this phase reinforced several key lessons:
-- clean, watertight geometry is essential for stable meshing and solver convergence  
-- mesh resolution and refinement choices directly influence which flow features can be meaningfully interpreted  
-- numerical convergence is a prerequisite for analysis, but does not guarantee physical accuracy  
-- CFD is most effective as a comparative and exploratory tool rather than an absolute predictor in early design stages  
+From an engineering standpoint, this phase reinforced several important points:
+- clean, watertight geometry is required for stable meshing and solver convergence  
+- mesh refinement choices determine which flow features can be interpreted reliably  
+- numerical convergence alone does not guarantee physical accuracy  
+- CFD is best used as a comparative and exploratory tool at early design stages  
 
-Overall, the project established a repeatable, open-source pipeline that links concept design, physical feedback, and computational analysis. This foundation enables systematic geometry iteration and provides a framework for deeper aerodynamic studies in future phases.
+Overall, the project establishes a repeatable, open-source workflow linking concept design, physical prototyping, and qualitative aerodynamic analysis. This provides a solid foundation for systematic geometry iteration and more detailed studies in future phases.
 
 ---
 
 ## Next Technical Focus
 
-With the CFD pipeline successfully established and validated, active development on this project is now paused. The primary focus has shifted toward a Raspberry Pi–based autonomous rover project, where attention is directed to real-time sensing, control, and embedded systems.
+With the CFD pipeline established and validated, active development on this project is now paused. Current efforts are focused on a **[Raspberry Pi–based autonomous rover platform](/projects/adas-rover/)** centered on the **simulation, validation, and deployment of Advanced Driver Assistance Systems (ADAS)** concepts.
 
-The CFD pipeline developed here remains available as a reusable framework for future design studies or comparative analysis, should the need arise.
+The CFD pipeline developed here remains available as a reusable framework for future design studies or comparative aerodynamic analysis, should the need arise.
 
 ---
 
