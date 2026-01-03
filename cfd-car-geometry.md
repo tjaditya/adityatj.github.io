@@ -208,7 +208,7 @@ Quality checks included:
 - skewness
 - cell aspect ratios
 
-The final mesh satisfied recommended quality thresholds for steady-state external aerodynamics using **simpleFoam**. While not optimized for precise aerodynamic coefficient prediction, the mesh was verified to be suitable for studying flow patterns, separation behavior, and wake structure. Mesh diagnostics were reviewed directly from OpenFOAM mesh quality reports rather than relying on visual inspection alone.
+The mesh met quality requirements for steady-state external aerodynamics with **simpleFoam**. Although not designed for accurate force prediction, it was sufficient for qualitative analysis of flow separation and wake structure, as verified through OpenFOAM mesh quality diagnostics.
 
 
 ![CFD mesh visualization](/assets/projects/cfd/results/mesh-1.png)
