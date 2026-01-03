@@ -1,25 +1,19 @@
----
-layout: page
-title: Projects
-permalink: /projects/
----
-
 ## Featured Projects
 
 ---
 
-### 1. Concept Car Geometry Development and CFD Pipeline Implementation
+### 1. Concept Car Aerodynamics: Geometry Development and CFD Pipeline
 
 **Domain:** Automotive Design and Aerodynamics  
 **Tools:** Blender, snappyHexMesh, OpenFOAM, ParaView  
-**Status:** Phase 1 complete
+**Status:** Core pipeline implemented and validated
 
 A self-driven follow-up project extending my **IED Turin car design work** into a complete  
 **design–simulation–physical prototyping pipeline**, built entirely using open-source tools.
 
 The project focuses on taking an early-stage concept car design through
 **geometry refinement, meshing, solver setup, convergence, and validation**, with emphasis on
-engineering-aware modeling, numerical stability, and iteration rather than visual styling alone.
+engineering-aware modeling, numerical stability, and iterative refinement rather than visual styling alone.
 
 **Focus areas**
 
@@ -36,14 +30,14 @@ engineering-aware modeling, numerical stability, and iteration rather than visua
 
 ### 2. IED Turin – Automotive Concept Design (Onsite Summer Program)
 
+This project forms the **design foundation** for my later work in computational aerodynamics,
+geometry refinement, and physical prototyping.
+
 In summer 2025, I attended a **three-week onsite automotive design program** at  
 **Istituto Europeo di Design (IED), Turin**.
 
 The course focused on the complete exterior car design workflow, from sketching and proportion
 studies to physical model development.
-
-This project laid the **design foundation** for my later computational aerodynamics,
-geometry refinement, and physical prototyping work.
 
 **Course highlights**
 
@@ -62,15 +56,11 @@ geometry refinement, and physical prototyping work.
 
 **Industry Exposure (Garage Visits)**
 
-Alongside studio coursework, I visited several private and specialist automotive garages
-in and around Turin, gaining exposure to:
+Alongside studio coursework, I visited several specialist automotive garages
+in and around Turin, gaining exposure to fabrication techniques, performance
+vehicle restoration, and motorsport-influenced modification processes.
 
-- Performance vehicle restoration and custom tuning  
-- Fabrication techniques for bodywork and aerodynamic components  
-- Motorsport-influenced modification processes  
-- High-precision finishing and detailing  
-
-These visits helped bridge the gap between **design intent** and **real-world build constraints**.
+These visits helped connect **design intent** with **real-world build constraints**.
 
 [View full IED Turin project with photos →](/projects/ied-turin/)
 
@@ -88,10 +78,10 @@ Rather than starting with a fully autonomous rover, this project follows an
 - tested through clean hardware-agnostic interfaces, and
 - incrementally deployed onto a Raspberry Pi–based rover only after verification.
 
-The emphasis is on **system architecture, correctness, and safety-aware development**, mirroring
-real-world automotive and robotics workflows.
+Initial simulation dashboards for **AEB and ACC scenarios are functional** and used for
+behavior verification across controlled test cases.
 
-**Target ADAS capabilities (to be developed incrementally)**
+**ADAS capabilities under active development**
 
 - Lane Keeping Assist (LKA)  
 - Adaptive Cruise Control (ACC)  
@@ -112,5 +102,6 @@ with features introduced only after validation in a controlled environment.
 
 ---
 
-More projects and detailed write-ups will be added over time as I continue to expand
-my engineering and design work.
+This portfolio highlights a **deliberately curated set of projects** that reflect
+my interests in mechanical engineering, aerodynamics, and autonomous systems,
+with emphasis on depth, correctness, and iterative engineering practice.
