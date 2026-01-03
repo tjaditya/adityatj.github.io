@@ -109,7 +109,7 @@ This phase was critical in bridging the gap between design-oriented modeling and
   </model-viewer>
 
   <p style="font-size: 0.95rem; opacity: 0.85; margin-top: 0.25rem;">
-    Tip: drag to rotate, scroll to zoom.
+    <i>Tip: drag to rotate, scroll to zoom.</i>
   </p>
 
   <noscript>
