@@ -19,7 +19,7 @@ permalink: /projects/cfd-car-geometry/
 
 ## Project Context
 
-This project is a follow-up to a 3-week onsite summer course in "Introduction to Car Design" at Istituto Europeo di Design (IED), Turin.
+This is a self-driven follow-up project to a 3-week onsite summer course in "Introduction to Car Design" at Istituto Europeo di Design (IED), Turin.
 
 The objective was to take an early-stage concept design and develop it into:
 - a CFD-ready 3D geometry suitable for airflow analysis, and
