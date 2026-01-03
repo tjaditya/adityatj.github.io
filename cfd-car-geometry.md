@@ -43,7 +43,7 @@ At this stage, the emphasis was on form exploration without constraining the des
 
 ![Concept form exploration in Blender](/assets/projects/cfd/screenshots/01-concept-form.png)
 
-Early concept-stage form exploration in Blender, focusing on proportions, stance, and overall surface flow before applying simulation constraints.
+*Early concept-stage form exploration in Blender, focusing on proportions, stance, and overall surface flow before applying simulation constraints.*
 
 ---
 
@@ -60,7 +60,7 @@ These changes were made with the understanding that surface quality directly imp
 
 ![Refined surface development](/assets/projects/cfd/screenshots/02-surface-refinement.png)
 
-Progressive refinement into a continuous body shell, improving curvature continuity and eliminating sharp, non-physical transitions.
+*Progressive refinement into a continuous body shell, improving curvature continuity and eliminating sharp, non-physical transitions.*
 
 ---
 
@@ -78,7 +78,7 @@ This phase was critical in bridging the gap between design-oriented modeling and
 
 ![Mesh-aware topology cleanup](/assets/projects/cfd/screenshots/03-topology-cleanup.png)
 
-Topology cleanup and edge-flow alignment performed with mesh stability and CFD suitability in mind.
+*Topology cleanup and edge-flow alignment performed with mesh stability and CFD suitability in mind.*
 
 <section style="margin: 1.5rem 0;">
   <h2>Interactive Geometry</h2>
@@ -129,11 +129,6 @@ After reviewing the first print, I received feedback from an IED faculty mentor 
 
 Based on that feedback, I modified the 3D geometry and produced a second iteration, which was also 3D printed. This reinforced an iterative engineering mindset where critique and physical validation inform the next design version.
 
-Optional images to add in this section:
-- first print photo: /assets/projects/cfd/prints/print-v1.jpg
-- second print photo: /assets/projects/cfd/prints/print-v2.jpg
-- side-by-side comparison: /assets/projects/cfd/prints/print-compare.jpg
-
 ---
 
 ## CFD Pipeline Overview
@@ -172,7 +167,7 @@ By excluding wheels and ground interaction at this phase, the simulation remains
 
 ![Final CFD-ready external body shell](/assets/projects/cfd/screenshots/06-final-cfd-body-shell.png)
 
-Final external body geometry after cleanup and simplification. Wheels and ground plane have been removed to isolate the aerodynamic influence of the body shape.
+*Final external body geometry after cleanup and simplification. Wheels and ground plane have been removed to isolate the aerodynamic influence of the body shape.*
 
 ---
 
@@ -180,7 +175,7 @@ Final external body geometry after cleanup and simplification. Wheels and ground
 
 ![Watertight surface and normal direction verification](/assets/projects/cfd/screenshots/05-geometry-watertight-check.png)
 
-Inspection of the closed external body shell in Blender with face normal visualization enabled. Surface normals were checked and corrected to ensure consistent outward orientation, preventing meshing and solver instability.
+*Inspection of the closed external body shell in Blender with face normal visualization enabled. Surface normals were checked and corrected to ensure consistent outward orientation, preventing meshing and solver instability.*
 
 ---
 
@@ -213,7 +208,7 @@ The mesh met quality requirements for steady-state external aerodynamics with **
 
 ![CFD mesh visualization](/assets/projects/cfd/results/mesh-1.png)
 
-Surface and volume mesh visualization highlighting local refinement near the front fascia, roof, and rear wake region.
+*Surface and volume mesh visualization highlighting local refinement near the front fascia, roof, and rear wake region.*
 
 ---
 
@@ -243,7 +238,7 @@ Both criteria were used together to distinguish numerical convergence from physi
 
 ![CFD convergence history](/assets/projects/cfd/results/convergence-combined.png)
 
-Residual histories and force coefficient trends were extracted from OpenFOAM logs and plotted using gnuplot, confirming numerical convergence and stabilization of the steady-state solution.
+*Residual histories and force coefficient trends were extracted from OpenFOAM logs and plotted using gnuplot, confirming numerical convergence and stabilization of the steady-state solution.*
 
 ---
 
@@ -253,25 +248,29 @@ With a converged steady-state solution obtained, **ParaView** was used to perfor
 
 Post-processing focused on:
 
-- velocity magnitude contours to examine flow acceleration and deceleration over key surfaces  
+- normalized velocity (U/U∞) contours to examine flow acceleration and deceleration over key surfaces  
 - **normalized velocity slices (U/U∞)** at multiple heights to study vertical variation in the flow field  
 - streamline and streamtracer visualization to examine wake formation and recirculation behavior
+  
 Rather than relying on a single visualization, multiple complementary views were used to build a physically consistent picture of the external flow.
 
 ### Velocity Distribution Across Vertical Sections
 
-Horizontal velocity slices taken near the ground, at mid-height, and near the roof reveal how flow behavior evolves across the height of the body. Near-ground regions show reduced velocities influenced by boundary-layer effects and simplified underbody geometry. Mid-height slices capture smoother acceleration along the side surfaces, while roof-level slices exhibit the highest velocities, consistent with acceleration over curved upper surfaces.
+Normalized velocity slices (**U/U∞**) were extracted at three representative vertical planes—near the ground (underbody), at mid-height, and above the roof—to examine how flow behavior varies across the height of the body.
 
-Together, these comparisons highlight the dominant role of overall body curvature in governing flow attachment and wake development.
+The **roof-level slice** lies largely outside the near-body flow and is dominated by freestream conditions. Only a thin, elongated velocity deficit is observed downstream, indicating the upper extent of the wake and confirming that the primary wake structure remains confined closer to the body.
 
-![Velocity magnitude – Roof section](/assets/projects/cfd/results/velocity-roof.png)
-Velocity profile - Roof section
-![Velocity magnitude – Mid section](/assets/projects/cfd/results/velocity-mid.png)
-Velocity profile - Mid section
-![Velocity magnitude – Ground section](/assets/projects/cfd/results/velocity-underbody.png)
-Velocity profile - Underbody section
+At **mid-height**, the influence of the vehicle geometry is more pronounced. This slice captures the core wake region, with reduced velocities extending downstream of the rear surfaces. It highlights the primary separation behavior and lateral spreading of the wake driven by the overall body shape.
 
-*“Velocity magnitude contours at multiple vertical sections, illustrating the evolution of flow from the ground plane to the roof.”*
+The **underbody slice** exhibits the strongest velocity variations. Local acceleration is observed as the flow passes through the constricted region beneath the body, followed by a broader velocity deficit downstream. These features reflect the combined influence of surface proximity, simplified underbody geometry, and flow expansion into the wake.
+
+Together, these slices illustrate the vertical stratification of the external flow field: freestream-dominated behavior above the body, wake-dominated flow at mid-height, and accelerated, geometry-influenced flow near the underbody. This comparison reinforces the role of overall body curvature and rear geometry in governing wake formation and recovery.
+
+![Normalized Velocity – Roof section](/assets/projects/cfd/results/velocity-roof-2.png)  
+![Normalized Velocity – Mid section](/assets/projects/cfd/results/velocity-mid.png)  
+![Normalized Velocity – Underbody section](/assets/projects/cfd/results/velocity-underbody.png)
+
+*Normalized velocity contours at roof, mid-height, and underbody sections, illustrating vertical variation in flow behavior and wake development.*
 
 ### Mid-Plane and Side Periphery Flow Behavior
 
@@ -281,35 +280,33 @@ These sections were chosen to examine how localized three-dimensional geometry i
 
 The periphery slice highlights regions of localized acceleration and flow curvature induced by the side-mounted feature, illustrating how such geometry introduces three-dimensional effects even in an otherwise symmetric external flow. Together, these views emphasize how secondary design elements can influence local flow behavior without dominating overall wake structure.
 
-![Velocity magnitude – vertical mid-plane slice](/assets/projects/cfd/results/velocity-vertical-slice-mid.png)
-![Velocity magnitude – vertical periphery slice](/assets/projects/cfd/results/velocity-vertical-slice-periphery.png)
+![Normalized velocity (U/U∞) – vertical mid-plane slice](/assets/projects/cfd/results/velocity-vertical-slice-mid.png)
+![Normalized velocity (U/U∞) – vertical periphery slice](/assets/projects/cfd/results/velocity-vertical-slice-periphery.png)
 
-Velocity magnitude slices through the vehicle mid-plane and side periphery, illustrating localized flow behavior influenced by the wing–hoop structural geometry.
+*Normalized velocity (U/U∞) slices through the vehicle mid-plane and side periphery, illustrating localized flow behavior influenced by the wing–hoop structural geometry.*
 
 
 ### Wake Structure and Streamtracer Visualization
 
-To further examine wake behavior, streamtracer visualization was used to track flow paths downstream of the vehicle. Seed points placed upstream of the body reveal how flow separates at the rear surfaces and forms recirculation regions in the wake.
+To interpret wake formation and downstream flow behavior, **streamtracer visualization** was used with seeds placed just downstream of the rear geometry and integrated in the freestream direction.
 
-The streamtracers make the three-dimensional nature of the wake more apparent than scalar contours alone, highlighting regions of flow reversal, mixing, and gradual recovery toward freestream conditions. This view complements the velocity slice analysis by providing an intuitive visualization of wake size, structure, and coherence.
+The resulting streamtracers reveal a low-velocity wake region immediately behind the vehicle, followed by gradual recovery toward freestream conditions farther downstream. Compared to scalar velocity contours alone, this representation provides clearer insight into wake extent, lateral spread, and overall coherence.
+
+Consistent with the steady-state RANS formulation and simplified boundary conditions used in this phase, the wake appears smooth and coherent and is interpreted qualitatively rather than as a representation of unsteady turbulence.
 
 ![Wake streamtracer visualization](/assets/projects/cfd/results/wake-streamtracers.png)
 
-Streamtracer visualization showing flow separation and recirculation in the vehicle wake, illustrating wake structure and downstream recovery.
+*Streamtracer visualization illustrating wake separation and downstream recovery behind the vehicle.*
 
-Overall, these visualizations were used to connect geometric design decisions to observed flow behavior, reinforcing CFD’s role as an exploratory and interpretive tool during early-stage aerodynamic development.
+### Surface Pressure Distribution and Wake Correlation
 
-### Pressure Field Visualization and Wake Correlation
+Surface pressure distribution on the vehicle body was examined to support interpretation of the velocity and wake results.
 
-To complement the velocity-based analysis, a three-dimensional pressure field visualization was examined to better understand the relationship between surface geometry and wake formation.
+Higher pressure regions are observed on the frontal surfaces, while lower pressure dominates toward the rear of the body. The rear pressure deficit is consistent with flow separation and wake formation identified in the velocity slice and streamtracer visualizations.
 
-The pressure distribution highlights higher-pressure regions near the frontal surfaces and a pronounced low-pressure zone in the rear wake. This pressure deficit downstream of the body is consistent with the observed flow separation and recirculation patterns identified in the velocity slices and streamtracer visualizations.
+![Surface pressure distribution](/assets/projects/cfd/results/pressure-surface-profile.png)
 
-Rather than serving as a basis for quantitative force estimation, the pressure field is used here to reinforce physical intuition—illustrating how pressure gradients drive flow separation and influence wake structure in external aerodynamics.
-
-![3D pressure field visualization](/assets/projects/cfd/results/pressure-surface-profile.png)
-
-Three-dimensional pressure field visualization showing frontal pressure buildup and low-pressure regions in the vehicle wake, correlated with observed flow separation and recirculation.
+*Surface pressure distribution showing frontal pressure buildup and a rear low-pressure region associated with wake formation. This visualization is used for qualitative interpretation rather than quantitative force estimation.*
 
 ---
 
