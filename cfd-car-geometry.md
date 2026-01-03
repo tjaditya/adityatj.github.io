@@ -8,7 +8,7 @@ permalink: /projects/cfd-car-geometry/
 [Back to Projects](/projects/)
 
 **Domain:** Automotive Design and Aerodynamics  
-**Tools:** Blender, snappyHexMesh, OpenFOAM, ParaView, 3D Printing  
+**Tools:** Blender, snappyHexMesh, OpenFOAM, ParaView, gnuplot, 3D Printing  
 **Project Type:** Self-driven follow-up project  
 **Status:** Phase 1 complete — digital-to-physical workflow established; CFD pipeline converged
 
@@ -243,7 +243,7 @@ Both criteria were used together to distinguish numerical convergence from physi
 
 ![CFD convergence history](/assets/projects/cfd/results/convergence-combined.png)
 
-Convergence history showing residual decay and force coefficient stabilization, confirming numerical and practical convergence of the steady-state solution.
+Residual histories and force coefficient trends were extracted from OpenFOAM logs and plotted using gnuplot, confirming numerical convergence and stabilization of the steady-state solution.
 
 ---
 
