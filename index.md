@@ -11,7 +11,8 @@ My primary areas of interest include:
 
 - **Vehicle design and aerodynamics**, with emphasis on geometry development,
   validation, CFD analysis, and physical prototyping
-- **Robotics and embedded systems**, with a focus on autonomous ground vehicles
+- **Robotics and embedded systems**, with a focus on simulation-driven development
+  for autonomous ground vehicles
 - **Computational physics and programming** (Python; MITx 6.00.1x and 6.00.2x)
 - **Photography and travel**, as tools for observation and visual reasoning
 
