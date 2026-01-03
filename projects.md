@@ -1,5 +1,7 @@
-## Featured Projects
-
+---
+layout: page
+title: Projects
+permalink: /projects/
 ---
 
 ### 1. Concept Car Aerodynamics: Geometry Development and CFD Pipeline
