@@ -7,10 +7,10 @@ permalink: /projects/cfd-car-geometry/
 
 [Back to Projects](/projects/)
 
-Tools: Blender, snappyHexMesh, OpenFOAM, ParaView, 3D Printing  
-Domain: Automotive Design and Aerodynamics  
-Type: Self-driven follow-up project  
-Status: Phase 1 complete (digital-to-physical workflow established; CFD pipeline converged)
+**Domain:** Automotive Design and Aerodynamics  
+**Tools:** Blender, snappyHexMesh, OpenFOAM, ParaView, 3D Printing  
+**Project Type:** Self-driven follow-up project  
+**Status:** Phase 1 complete — digital-to-physical workflow established; CFD pipeline converged
 
 **GitHub Repository:**  
 👉 [https://github.com/tjaditya/cfd-car-geometry](https://github.com/tjaditya/cfd-car-geometry)
@@ -25,7 +25,8 @@ The objective was to take an early-stage concept design and develop it into:
 - a CFD-ready 3D geometry suitable for airflow analysis, and
 - a complete open-source CFD workflow that can be repeated and improved through iteration.
 
-In addition to the digital pipeline, I 3D printed the geometry, incorporated faculty feedback, and produced a modified second iteration.
+In addition to the digital pipeline, I 3D printed the geometry, incorporated faculty feedback, and produced a modified second iteration. 
+This phase focused on establishing a robust, repeatable baseline workflow, rather than optimizing aerodynamic performance.
 
 ---
 
@@ -140,13 +141,13 @@ Optional images to add in this section:
 This project extends beyond geometry preparation into a complete open-source CFD workflow for external aerodynamics.
 
 Pipeline:
-
+```text
     Blender (.blend)
       -> STL export
       -> snappyHexMesh (surface and volume meshing)
       -> OpenFOAM (steady-state solver: simpleFoam)
       -> ParaView (flow visualization and analysis)
-
+```
 ---
 
 ## Geometry Export and Technical Pre-processing
