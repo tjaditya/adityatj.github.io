@@ -208,7 +208,7 @@ Quality checks included:
 - skewness
 - cell aspect ratios
 
-The final mesh satisfied recommended quality thresholds for steady-state external aerodynamics using **simpleFoam**. While not optimized for precise aerodynamic coefficient prediction, the mesh was verified to be suitable for studying flow patterns, separation behavior, and wake structure.
+The final mesh satisfied recommended quality thresholds for steady-state external aerodynamics using **simpleFoam**. While not optimized for precise aerodynamic coefficient prediction, the mesh was verified to be suitable for studying flow patterns, separation behavior, and wake structure. Mesh diagnostics were reviewed directly from OpenFOAM mesh quality reports rather than relying on visual inspection alone.
 
 
 ![CFD mesh visualization](/assets/projects/cfd/results/mesh-1.png)
@@ -271,7 +271,7 @@ Velocity profile - Mid section
 ![Velocity magnitude – Ground section](/assets/projects/cfd/results/velocity-underbody.png)
 Velocity profile - Underbody section
 
-Velocity magnitude contours at multiple vertical sections, illustrating the evolution of flow acceleration from the ground plane to the roof.
+*“Velocity magnitude contours at multiple vertical sections, illustrating the evolution of flow from the ground plane to the roof.”*
 
 ### Mid-Plane and Side Periphery Flow Behavior
 
@@ -340,9 +340,10 @@ The CFD pipeline developed here remains available as a reusable framework for fu
 ---
 
 ## Potential Extensions
-- Comparitive study with the modified model
+- Comparative study with the modified model
 - Extraction of basic aerodynamic coefficients for relative comparison
 - Controlled geometry variations to study qualitative aerodynamic trends
 
+These extensions are noted for completeness but were intentionally excluded from the current scope.
 
 [Back to Projects](/projects/)
