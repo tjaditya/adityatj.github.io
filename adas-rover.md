@@ -17,11 +17,9 @@ permalink: /projects/adas-rover/
 
 Advanced Driver Assistance Systems (ADAS) are **safety-critical, real-time systems** that cannot be developed reliably through direct trial-and-error on physical hardware. In professional automotive and robotics workflows, control and perception algorithms are first **designed, simulated, validated, and stress-tested** before being deployed to embedded platforms.
 
-This project is therefore **not an attempt to rapidly build an autonomous rover**, but a deliberate effort to design a **development and deployment infrastructure** that mirrors real-world ADAS engineering practice.
+This project is therefore **not an attempt to rapidly build an autonomous rover**, but a deliberate effort to design a **development and deployment infrastructure** that reflects real-world ADAS engineering practice.
 
-The rover serves as a **controlled execution platform**, while the primary focus of the project is on **system architecture, validation workflows, and observable system behavior**, rather than feature count.
-
-This work is also informed by insights gained during my earlier **CFD-based vehicle aerodynamics project**, where simulation fidelity, boundary conditions, and post-processing were essential to correctly interpreting physical behavior. That experience reinforced the importance of **validating models and assumptions in controlled environments before interacting with real systems**. The same philosophy is applied here at the systems level: ADAS perception and control algorithms are first exercised, stressed, and observed in simulation before being deployed onto embedded hardware.
+The rover serves as a **controlled execution platform**, while the primary focus of the project is on **system architecture, validation workflows, and observable system behavior**, rather than on feature count.
 
 ---
 
