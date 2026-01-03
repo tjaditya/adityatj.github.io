@@ -80,6 +80,8 @@ This phase was critical in bridging the gap between design-oriented modeling and
 
 *Topology cleanup and edge-flow alignment performed with mesh stability and CFD suitability in mind.*
 
+---
+
 <section style="margin: 1.5rem 0;">
   <h2>Interactive Geometry</h2>
   <p>
