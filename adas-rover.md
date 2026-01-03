@@ -9,7 +9,9 @@ permalink: /projects/adas-rover/
 **Tools:** Raspberry Pi, Python, C++, Sensor Interfaces, Control Logic  
 **Domain:** Robotics, Embedded Systems, ADAS  
 **Type:** Infrastructure-first, systems-engineering project  
-**Status:** Architecture and simulation pipeline under development
+**Status:** Active development — working simulation environment with ACC/AEB scenarios
+
+*A working laptop-based simulation environment currently supports scenario-driven execution of ACC and AEB logic with full state observability.*
 
 ---
 
@@ -19,7 +21,7 @@ Advanced Driver Assistance Systems (ADAS) are **safety-critical, real-time syste
 
 This project is therefore **not an attempt to rapidly build an autonomous rover**, but a deliberate effort to design a **development and deployment infrastructure** that reflects real-world ADAS engineering practice.
 
-The rover serves as a **controlled execution platform**, while the primary focus of the project is on **system architecture, validation workflows, and observable system behavior**, rather than on feature count.
+The rover serves as a **controlled execution platform**, while the primary focus of the project is on **system architecture, validation workflows, and observable system behavior**, rather than feature breadth.
 
 ---
 
@@ -33,7 +35,38 @@ The objective of this project is to build a **modular ADAS experimentation platf
 - controlled, incremental deployment to embedded systems  
 - systematic observation, logging, and debugging of system behavior  
 
-Throughout the project, emphasis is placed on **correctness, repeatability, and engineering discipline**, reflecting how safety-critical systems are developed in industry.
+---
+
+## Simulation Capabilities (Current Implementation)
+
+A functional version of the platform is operational in the **laptop-based simulation environment**, enabling controlled execution of selected ADAS behaviors under predefined scenarios.
+
+The simulation framework allows individual ADAS capabilities to be **explicitly enabled or disabled**, and system behavior to be observed deterministically using mocked and replayable sensor inputs.
+
+Currently supported in simulation:
+
+- **Adaptive Cruise Control (ACC):** longitudinal distance and speed regulation relative to a simulated lead object  
+- **Autonomous Emergency Braking (AEB):** collision risk evaluation and braking intervention under critical conditions  
+
+Simulation runs expose **distance profiles, feature state transitions, timing effects, and priority overrides**, enabling repeatable analysis of control decisions and feature interaction without exposing physical hardware to risk.
+
+The simulation environment is intended strictly as a **development and validation tool**. Observed behaviors are scenario-specific and do not imply real-world robustness or safety certification. All capabilities must demonstrate stable and predictable behavior in simulation before any constrained hardware deployment is considered.
+
+### Edge-Case Scenario: Sudden Cut-In
+
+The platform is used to examine system behavior under **transient, safety-critical conditions** where rapid changes in the environment require interaction between multiple ADAS features.
+
+![ADAS simulation – sudden cut-in scenario with ACC and AEB](/assets/projects/adas/sudden-cut-in.png)
+
+*Simulation run showing distance-to-lead-object over time (top) and internal ACC/AEB state timelines (bottom) during a sudden cut-in scenario.*
+
+In this scenario:
+- a rapid reduction in lead-object distance is introduced through the scenario definition  
+- **ACC transitions from cruise to slowdown** as longitudinal control responds  
+- **AEB arms and triggers intermittently** when collision-risk thresholds are crossed  
+- priority handling ensures that **emergency braking behavior overrides ACC** during critical intervals  
+
+The emphasis here is on **behavioral clarity, timing, and traceability**, not on claiming real-world robustness.
 
 ---
 
@@ -75,22 +108,28 @@ The diagram below illustrates the end-to-end architecture of the ADAS simulation
 
 ---
 
+## Runtime Observability
+
+The platform includes **development-time observability tooling** to inspect live telemetry, internal ADAS states, and feature interactions during simulation runs. This supports traceability of decisions, timing behavior, and priority handling under both steady-state and edge-case scenarios.
+
+---
+
 ## Development Philosophy
 
 This project follows an **infrastructure-first, safety-aware development philosophy** inspired by professional ADAS workflows.
 
 Key principles include:
 
-- **Hardware Abstraction Layer (HAL):** Sensors and actuators are accessed exclusively through abstract interfaces, isolating algorithms from hardware-specific details.  
-- **Mock and Replay-Based Testing:** Sensor behavior can be simulated or replayed from recorded data to enable deterministic, repeatable testing.  
-- **Validation Before Deployment:** Algorithms must demonstrate stable and predictable behavior in simulation before interacting with physical hardware.  
-- **Incremental Capability Enablement:** Only one ADAS capability is introduced at a time to control system complexity and reduce risk.
+- **Hardware Abstraction Layer (HAL):** Sensors and actuators are accessed exclusively through abstract interfaces, isolating algorithms from hardware-specific details  
+- **Mock and Replay-Based Testing:** Sensor behavior can be simulated or replayed from recorded data to enable deterministic, repeatable testing  
+- **Validation Before Deployment:** Algorithms must demonstrate stable and predictable behavior in simulation before interacting with physical hardware  
+- **Incremental Capability Enablement:** Only one ADAS capability is introduced at a time to control system complexity and reduce risk  
 
 ---
 
 ## Target ADAS Capabilities (Planned)
 
-### Lane Keeping Assist (LKA)
+### Lane Keeping Assist (LKA) *(architecture defined; implementation pending)*
 - Lane detection and estimation  
 - Steering correction logic  
 - Stability under varying inputs  
@@ -114,7 +153,7 @@ Key principles include:
 - Validation of GPIO, motor drivers, and basic actuation  
 - Initial sensor communication tests  
 
-### Stage 2 – Simulation and Replay Pipeline
+### Stage 2 – Simulation and Replay Pipeline *(Complete for ACC/AEB)*
 - Mock sensor interfaces for laptop execution  
 - Recorded data playback for repeatable validation  
 - Algorithm verification independent of hardware  
@@ -136,16 +175,16 @@ Key principles include:
 - Raspberry Pi as the embedded execution platform  
 - Python and C++ for algorithm and control logic  
 - Distance and vision sensors *(planned)*  
-- Simulation and replay scripts for validation  
+- Simulation, replay, and scenario tooling for validation  
 - Data logging and visualization tools  
+
+Technology choices favor **transparency, debuggability, and iteration speed** over performance optimization.
 
 ---
 
-## Current Status
+## Development Notes
 
-The project is currently in the **architecture definition and simulation pipeline development phase**.
-
-Core system interfaces are being finalized, and platform bring-up work is underway. No ADAS capability is deployed to hardware until it has been validated through simulation and replay-based testing.
+AI-assisted coding tools were used selectively for **visualization and UI scaffolding**. All system architecture, control logic, state handling, and scenario definitions were designed and reviewed manually, with AI output treated as a productivity aid rather than an author.
 
 ---
 
@@ -155,8 +194,8 @@ This project demonstrates:
 
 - systems-level thinking in robotics and ADAS  
 - safety-aware, validation-driven development practices  
-- clean separation between software logic and hardware execution  
-- disciplined incremental integration  
+- disciplined separation between software logic and hardware execution  
+- controlled, incremental integration of complex features  
 - understanding of how real-world ADAS systems are engineered and validated  
 
 ---
