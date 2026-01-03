@@ -252,10 +252,10 @@ Residual histories and force coefficient trends were extracted from OpenFOAM log
 With a converged steady-state solution obtained, **ParaView** was used to perform qualitative flow analysis aimed at understanding three-dimensional flow behavior around the body.
 
 Post-processing focused on:
-- velocity magnitude contours to examine flow acceleration and deceleration over key surfaces  
-- sectional velocity slices at multiple heights to study vertical variation in the flow field  
-- streamline and streamtracer visualization to examine wake formation and recirculation behavior  
 
+- velocity magnitude contours to examine flow acceleration and deceleration over key surfaces  
+- **normalized velocity slices (U/U∞)** at multiple heights to study vertical variation in the flow field  
+- streamline and streamtracer visualization to examine wake formation and recirculation behavior
 Rather than relying on a single visualization, multiple complementary views were used to build a physically consistent picture of the external flow.
 
 ### Velocity Distribution Across Vertical Sections
