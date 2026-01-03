@@ -307,7 +307,7 @@ The pressure distribution highlights higher-pressure regions near the frontal su
 
 Rather than serving as a basis for quantitative force estimation, the pressure field is used here to reinforce physical intuition—illustrating how pressure gradients drive flow separation and influence wake structure in external aerodynamics.
 
-![3D pressure field visualization](/assets/projects/cfd/results/pressure-field-3d.png)
+![3D pressure field visualization](/assets/projects/cfd/results/pressure-surface-profile.png)
 
 Three-dimensional pressure field visualization showing frontal pressure buildup and low-pressure regions in the vehicle wake, correlated with observed flow separation and recirculation.
 
