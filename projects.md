@@ -100,7 +100,7 @@ behavior verification across controlled test cases.
 This project serves as a **testbed for embedded systems, robotics, and ADAS-oriented system design**,
 with features introduced only after validation in a controlled environment.
 
-[View ADAS rover system design and development plan →](/projects/adas-rover/)
+[View ADAS simulation platform architecture and scenarios →](/projects/adas-rover/)
 
 ---
 
