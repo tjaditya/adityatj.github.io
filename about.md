@@ -46,12 +46,12 @@ My break year is centered on **project-based engineering**, where I deliberately
 - **CFD-Based Car Aerodynamics Pipeline**  
   *Blender → snappyHexMesh → OpenFOAM → ParaView*  
   Extending an earlier vehicle concept into a fully simulated aerodynamic model.  
-  Current focus areas include geometry cleanup, mesh quality, boundary condition setup, solver behavior, and interpretation of pressure, velocity, and force coefficients.  
+  Focus areas include geometry cleanup, mesh quality, boundary condition setup, solver behavior, and interpretation of pressure, velocity, and force coefficients.  
   Planned extensions include iterative design refinement and 3D-printable components.
 
 - **Autonomous Rover (Raspberry Pi)**  
-  Designing and implementing **Lane Keeping Assist (LKA)**, **Adaptive Cruise Control (ACC)**, and **Automatic Emergency Braking (AEB)**.  
-  Emphasis is on sensor integration, control logic, real-time decision making, and reliable embedded system behavior.
+  Designing and implementing **Lane Keeping Assist (LKA)**, **Adaptive Cruise Control (ACC)**, and **Automatic Emergency Braking (AEB)** concepts.  
+  Emphasis is on simulation-backed development, sensor integration, control logic, real-time decision making, and reliable embedded system behavior.
 
 ### 💻 Tools & Workflows I Actively Use
 - Linux-based development environments  
@@ -75,6 +75,14 @@ Alongside engineering, I maintain a small sketchbook focused on **form, perspect
 These studies support my work in vehicle modeling, aerodynamic surfaces, spatial reasoning, and concept development.
 
 → [View my sketchbook](/sketchbook/)
+
+---
+
+## Documentation & Tooling Note
+
+AI-assisted writing tools were used selectively to help structure and refine the **documentation and presentation** on this site and in select project repositories.
+
+All engineering work—including modeling, simulation setup, numerical analysis, and implementation—was performed independently, with design and technical decisions driven by physical reasoning and validation through results.
 
 ---
 
