@@ -11,6 +11,9 @@ permalink: /projects/adas-rover/
 **Type:** Infrastructure-first, systems-engineering project  
 **Status:** Active development — working simulation environment with ACC/AEB scenarios
 
+**GitHub Repository:**  
+👉 [https://github.com/tjaditya/adas-simulation-platform](https://github.com/tjaditya/adas-simulation-platform)
+
 *A working laptop-based simulation environment currently supports scenario-driven execution of ACC and AEB logic with full state observability.*
 
 ---
