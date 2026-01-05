@@ -61,7 +61,7 @@ The platform is used to examine system behavior under **transient, safety-critic
 
 ![ADAS simulation – sudden cut-in scenario with ACC and AEB](/assets/projects/adas/sudden-cut-in.png)
 
-*Simulation run showing distance-to-lead-object over time (top) and internal ACC/AEB state timelines (bottom) during a sudden cut-in scenario.*
+*ADAS real-time telemetry dashboard during a sudden cut-in scenario, showing distance time history, ACC state transitions, and AEB trigger thresholds, with synchronized raw telemetry logging*
 
 In this scenario:
 - a rapid reduction in lead-object distance is introduced through the scenario definition  
