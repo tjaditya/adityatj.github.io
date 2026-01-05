@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# About Me
-
 I’m **Aditya Jaikish Thamarasseril**, an aspiring **Mechanical & Robotics Engineer** with a strong interest in vehicle aerodynamics, computational design, robotics, and embedded systems.
 
 I am particularly drawn to engineering problems that lie at the intersection of **physics, computation, and real-world constraints**—where modeling, simulation, and experimentation inform each other. I enjoy working through complete engineering workflows, from early-stage concept development to implementation, validation, and iteration.
