@@ -41,23 +41,23 @@ My break year is centered on **project-based engineering**, where I deliberately
 - **Vehicle Concept Design – IED Turin (Onsite Summer Program)**  
   Completed an intensive **three-week onsite program** in Turin focused on automotive concept development, proportion, surfacing, and design thinking.  
   Developed an original car concept through iterative sketching, package studies, and form exploration under faculty guidance.  
-  This project later became the foundation for my independent computational aerodynamics and simulation work.
+  This work later served as the design foundation for an independent computational aerodynamics project.
 
 - **CFD-Based Car Aerodynamics Pipeline**  
   *Blender → snappyHexMesh → OpenFOAM → ParaView*  
-  Extending an earlier vehicle concept into a fully simulated aerodynamic model.  
-  Focus areas include geometry cleanup, mesh quality, boundary condition setup, solver behavior, and interpretation of pressure, velocity, and force coefficients.  
-  Planned extensions include iterative design refinement and 3D-printable components.
+  Extended an earlier vehicle concept into a **CFD-ready external geometry** and a complete open-source simulation workflow.  
+  This project focused on geometry preparation, mesh quality, solver convergence, and **qualitative analysis of velocity, pressure, and wake structure**, supported by physical validation through 3D-printed prototypes.  
+  The current phase establishes a **repeatable baseline pipeline**, intentionally prioritizing robustness and interpretability over performance optimization.
 
-- **Autonomous Rover (Raspberry Pi)**  
-  Designing and implementing **Lane Keeping Assist (LKA)**, **Adaptive Cruise Control (ACC)**, and **Automatic Emergency Braking (AEB)** concepts.  
-  Emphasis is on simulation-backed development, sensor integration, control logic, real-time decision making, and reliable embedded system behavior.
+- **Autonomous Rover for ADAS Simulation (Raspberry Pi)**  
+  Developing a **simulation-first platform** for exploring **Advanced Driver Assistance Systems (ADAS)** concepts, including **Lane Keeping Assist (LKA)**, **Adaptive Cruise Control (ACC)**, and **Automatic Emergency Braking (AEB)**.  
+  Emphasis is placed on scenario-based simulation, system behavior analysis, sensor abstraction, and controlled transition from simulated logic to embedded execution.
 
 ### 💻 Tools & Workflows I Actively Use
 - Linux-based development environments  
-- Git & GitHub for version control and documentation  
+- Git & GitHub for version control and technical documentation  
 - Python for simulation, automation, and data handling  
-- Embedded systems and robotics programming fundamentals  
+- Fundamentals of embedded systems and robotics programming  
 
 ---
 
@@ -80,15 +80,15 @@ These studies support my work in vehicle modeling, aerodynamic surfaces, spatial
 
 ## Documentation & Tooling Note
 
-AI-assisted writing tools were used selectively to help structure and refine the **documentation and presentation** on this site and in select project repositories.
+AI-assisted writing tools were used selectively to support the **structure and clarity of documentation** on this site and in select project repositories.
 
-All engineering work—including modeling, simulation setup, numerical analysis, and implementation—was performed independently, with design and technical decisions driven by physical reasoning and validation through results.
+All engineering work—including modeling, simulation setup, numerical analysis, and implementation—was performed independently, with technical decisions guided by physical reasoning and validation through results.
 
 ---
 
 ## What This Portfolio Represents
 
-This site is a living record of my learning journey, bringing together:
+This site is a curated record of my learning journey, bringing together:
 
 - Mechanical design  
 - Robotics & embedded systems  
@@ -97,7 +97,7 @@ This site is a living record of my learning journey, bringing together:
 - Visual studies  
 - Photography and travel documentation  
 
-I update it continuously as my projects evolve and my understanding deepens.
+I update it as projects mature and new technical insights are gained.
 
 ---
 
