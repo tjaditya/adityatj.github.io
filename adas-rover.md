@@ -151,7 +151,7 @@ Key principles include:
 
 ## Incremental Development Stages
 
-### Stage 1 – Platform Bring-Up *(In Progress)*
+### Stage 1 – Platform Bring-Up *(Complete)*
 - Raspberry Pi setup and remote access  
 - Validation of GPIO, motor drivers, and basic actuation  
 - Initial sensor communication tests  
@@ -161,16 +161,15 @@ Key principles include:
 - Recorded data playback for repeatable validation  
 - Algorithm verification independent of hardware  
 
-### Stage 3 – Single-Feature Deployment
+### Stage 3 – Single-Feature Deployment *(Planned)*
 - Deployment of one ADAS capability at a time  
 - Low-speed, constrained hardware testing  
 - Logging and behavioral verification  
 
-### Stage 4 – Multi-Feature Integration
+### Stage 4 – Multi-Feature Integration *(Planned)*
 - Priority handling (e.g., AEB overriding ACC)  
 - Interaction between perception and control layers  
 - System-level testing and refinement  
-
 ---
 
 ## Tooling and Technology Choices
