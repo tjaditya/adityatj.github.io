@@ -229,6 +229,12 @@ The objective of this phase was to establish a stable and converged solver confi
 
 ---
 
+## Model Validation & Iteration
+
+During early post-processing, I observed flow features that appeared physically inconsistent despite solver convergence and identified that the vehicle orientation in the Blender model was reversed relative to the intended inlet flow direction. I corrected the model orientation, regenerated the mesh, and restarted the simulations, using the revised setup for all subsequent analysis, reinforcing the importance of validating geometric assumptions and boundary conditions rather than relying solely on numerical convergence.
+
+---
+
 ## CFD Results and Convergence Validation
 
 The steady-state solution converged after approximately 2000 SIMPLE iterations.
