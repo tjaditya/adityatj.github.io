@@ -48,8 +48,10 @@ My break year is centered on **project-based engineering**, where I deliberately
   The current phase establishes a **repeatable baseline pipeline**, intentionally prioritizing robustness and interpretability over performance optimization.
 
 - **Autonomous Rover for ADAS Simulation (Raspberry Pi)**  
-  Developing a **simulation-first platform** for exploring **Advanced Driver Assistance Systems (ADAS)** concepts, including **Lane Keeping Assist (LKA)**, **Adaptive Cruise Control (ACC)**, and **Automatic Emergency Braking (AEB)**.  
-  Emphasis is placed on scenario-based simulation, system behavior analysis, sensor abstraction, and controlled transition from simulated logic to embedded execution.
+  Developing a **simulation-first platform** for exploring **Advanced Driver Assistance Systems (ADAS)** concepts.  
+  Current work focuses on **Adaptive Cruise Control (ACC)** and **Automatic Emergency Braking (AEB)** through scenario-based simulation and behavior analysis, with **Lane Keeping Assist (LKA)** planned as a subsequent extension.  
+  Emphasis is placed on sensor abstraction, system-level behavior validation, and controlled transition from simulated logic to embedded execution.
+
 
 ### 💻 Tools & Workflows I Actively Use
 - Linux-based development environments  
@@ -78,7 +80,7 @@ These studies support my work in vehicle modeling, aerodynamic surfaces, spatial
 
 ## Documentation & Tooling Note
 
-AI-assisted writing tools were used selectively to support the **structure and clarity of documentation** on this site and in select project repositories.
+AI-assisted writing tools were used selectively to support the **structure and clarity of documentation** on this site.
 
 All engineering work—including modeling, simulation setup, numerical analysis, and implementation—was performed independently, with technical decisions guided by physical reasoning and validation through results.
 
