@@ -133,8 +133,10 @@ Based on that feedback, I modified the 3D geometry and produced a second iterati
 
 ![Mdoel comparison - v1 vs v2](/assets/projects/cfd/models/car-comparison.png)
 *Comparison of the models from the 2 iterations*
+
 ![3D Print - Iteration 2](/assets/projects/cfd/models/01-3d-print-blue.jpeg)
 *3D print of version 2 used for CFD*
+
 ---
 
 ## CFD Pipeline Overview
@@ -214,7 +216,7 @@ The mesh met quality requirements for steady-state external aerodynamics with **
 
 ![CFD mesh visualization](/assets/projects/cfd/results/mesh-1.png)
 
-*Surface and volume mesh visualization highlighting local refinement near the front fascia, roof, and rear wake region.*
+*Surface mesh visualization highlighting local refinements*
 
 ---
 
