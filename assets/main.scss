@@ -1,0 +1,12 @@
+---
+---
+
+@import "minima";
+
+/* ===== Custom width override ===== */
+
+.wrapper {
+  max-width: 1200px;   /* try 1100–1400 */
+  padding-left: 24px;
+  padding-right: 24px;
+}
