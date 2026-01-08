@@ -135,6 +135,7 @@ Based on that feedback, I modified the 3D geometry and produced a second iterati
 
 *Comparison of the models from the 2 iterations*
 
+
 ![3D Print - Iteration 2](/assets/projects/cfd/models/01-3d-print-blue.jpeg)
 
 *3D print of version 2 used for CFD*
