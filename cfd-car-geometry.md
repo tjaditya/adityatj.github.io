@@ -132,9 +132,11 @@ After reviewing the first print, I received feedback from an IED faculty mentor 
 Based on that feedback, I modified the 3D geometry and produced a second iteration, which was also 3D printed. This reinforced an iterative engineering mindset where critique and physical validation inform the next design version.
 
 ![Mdoel comparison - v1 vs v2](/assets/projects/cfd/models/car-comparison.png)
+
 *Comparison of the models from the 2 iterations*
 
 ![3D Print - Iteration 2](/assets/projects/cfd/models/01-3d-print-blue.jpeg)
+
 *3D print of version 2 used for CFD*
 
 ---
