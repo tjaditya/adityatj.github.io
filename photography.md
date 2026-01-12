@@ -41,10 +41,24 @@ A small selection of photos from my Europe trip.
 <div class="photo-grid">
 
   <figure>
-    <a href="/assets/photos/europe-2025/pisa-1.jpeg" target="_blank">
-      <img src="/assets/photos/europe-2025/pisa-1.jpeg" alt="Pisa">
+    <a href="/assets/photos/europe-2025/pisa.jpg" target="_blank">
+      <img src="/assets/photos/europe-2025/pisa.jpg" alt="Pisa">
     </a>
-    <figcaption class="photo-caption">Pisa – Cathedral</figcaption>
+    <figcaption class="photo-caption">Pisa</figcaption>
+  </figure>
+  <br>
+  <figure>
+    <a href="/assets/photos/europe-2025/turin.jpg" target="_blank">
+      <img src="/assets/photos/europe-2025/turin.jpg" alt="Pisa">
+    </a>
+    <figcaption class="photo-caption">Turin - The Mole</figcaption>
+  </figure>
+  <br>
+  <figure>
+    <a href="/assets/photos/europe-2025/car-collection.jpg" target="_blank">
+      <img src="/assets/photos/europe-2025/car-collection.jpg" alt="Pisa">
+    </a>
+    <figcaption class="photo-caption">Turin - Private car collection</figcaption>
   </figure>
   <br>
   <figure>
