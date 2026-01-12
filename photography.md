@@ -51,7 +51,7 @@ A small selection of photos from my Europe trip.
     <a href="/assets/photos/europe-2025/turin.jpg" target="_blank">
       <img src="/assets/photos/europe-2025/turin.jpg" alt="Pisa">
     </a>
-    <figcaption class="photo-caption">Turin - The Mole</figcaption>
+    <figcaption class="photo-caption">Turin - Mole Antonelliana</figcaption>
   </figure>
   <br>
   <figure>
