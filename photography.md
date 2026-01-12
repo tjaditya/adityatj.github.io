@@ -26,8 +26,8 @@ permalink: /photography/
 
 .photo-grid img {
   width: 100%;
-  height: 180px;        /* key change */
-  object-fit: cover;    /* key change */
+  height: 180px;        /* fixed thumbnail height */
+  object-fit: cover;    /* crop instead of stretching */
   display: block;
 }
 
