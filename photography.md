@@ -40,8 +40,6 @@ permalink: /photography/
 </style>
 
 
-# Photography
-
 ---
 
 ## Europe – 2025
