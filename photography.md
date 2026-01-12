@@ -46,28 +46,24 @@ A small selection of photos from my Europe trip.
     </a>
     <figcaption class="photo-caption">Pisa</figcaption>
   </figure>
-  <br>
   <figure>
     <a href="/assets/photos/europe-2025/turin.jpg" target="_blank">
       <img src="/assets/photos/europe-2025/turin.jpg" alt="Pisa">
     </a>
     <figcaption class="photo-caption">Turin - Mole Antonelliana</figcaption>
   </figure>
-  <br>
   <figure>
     <a href="/assets/photos/europe-2025/car-collection.jpg" target="_blank">
       <img src="/assets/photos/europe-2025/car-collection.jpg" alt="Pisa">
     </a>
     <figcaption class="photo-caption">Turin - Private car collection</figcaption>
   </figure>
-  <br>
   <figure>
     <a href="/assets/photos/europe-2025/paris-tgv.jpeg" target="_blank">
       <img src="/assets/photos/europe-2025/paris-tgv.jpeg" alt="Paris TGV">
     </a>
     <figcaption class="photo-caption">Paris – TGV</figcaption>
   </figure>
-  <br>
   <figure>
     <a href="/assets/photos/europe-2025/Paris - Museum.jpeg" target="_blank">
       <img src="/assets/photos/europe-2025/Paris - Museum.jpeg" alt="Paris TGV">
@@ -76,14 +72,12 @@ A small selection of photos from my Europe trip.
       Paris – Cité des Sciences et de l'Industrie
     </figcaption>
   </figure>
-  <br>
   <figure>
     <a href="/assets/photos/europe-2025/interlaken-lunch.jpeg" target="_blank">
       <img src="/assets/photos/europe-2025/interlaken-lunch.jpeg" alt="Interlaken Lunch">
     </a>
     <figcaption class="photo-caption">Interlaken – Lunch by the river</figcaption>
   </figure>
-  <br>
 </div>
 
 ---
