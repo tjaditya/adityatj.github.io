@@ -58,7 +58,9 @@ A small selection of photos from my Europe trip.
     <a href="/assets/photos/europe-2025/Paris - Museum.jpeg" target="_blank">
       <img src="/assets/photos/europe-2025/Paris - Museum.jpeg" alt="Paris TGV">
     </a>
-    <figcaption class="photo-caption">Paris – Cité des Sciences et de l'Industrie</figcaption>
+    <figcaption class="photo-caption">
+      Paris – Cité des Sciences et de l'Industrie
+    </figcaption>
   </figure>
 
   <figure>
